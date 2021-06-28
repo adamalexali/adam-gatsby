@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from "react-helmet";
 
 // styles
 const pageStyles = {
@@ -129,7 +130,11 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Adam Ali — Digital Experience Designer, Prototyper, UX Researcher</title>
+        <link rel="canonical" href="https://adamalexali.com" />
+      </Helmet>
       <h1 style={headingStyles}>
         Welcome!
         <br />

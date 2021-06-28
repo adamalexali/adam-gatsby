@@ -4,5 +4,5 @@ module.exports = {
     siteURL: "https://adamalexali.com",
     description: "Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good."
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
 };
