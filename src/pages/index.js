@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
+import { Link } from 'gatsby';
+import Footer from '../components/footer';
 
 // styles
 const pageStyles = {
@@ -13,7 +15,7 @@ const headingStyles = {
   maxWidth: 320,
 };
 const headingAccentStyles = {
-  color: '#663399',
+  color: '#4c80ff',
 };
 const paragraphStyles = {
   marginBottom: 48,
@@ -37,7 +39,7 @@ const listItemStyles = {
 };
 
 const linkStyle = {
-  color: '#8954A8',
+  color: '#232129',
   fontWeight: 'bold',
   fontSize: 16,
   verticalAlign: '5%',
@@ -129,48 +131,61 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Adam Ali — Digital Experience Designer, Prototyper, UX Researcher</title>
-        <link rel="canonical" href="https://adamalexali.com" />
-      </Helmet>
-      <h1 style={headingStyles}>
-        Welcome!
-        <br />
-        <span style={headingAccentStyles}>
-          — this site is under development. Check back soon!
-        </span>
-      </h1>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map((link) => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label='New Badge'>
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
+    <>
+      <main style={pageStyles}>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>
+            Adam Ali — Digital Experience Designer, Prototyper, UX Researcher
+          </title>
+          <meta
+            name='description'
+            content='Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good.'
+          />
+          <link rel='canonical' href='https://adamalexali.com' />
+        </Helmet>
+        <h1 style={headingStyles}>
+          Welcome!
+          <br />
+          <span style={headingAccentStyles}>
+            — this site is under development. Check back soon!
+          </span>
+        </h1>
+        <p style={paragraphStyles}>
+          In the meantime, feel free to{' '}
+          <Link to='/about'>learn a bit more about me</Link>.
+        </p>
+        <ul style={listStyles}>
+          <li style={docLinkStyle}>
+            <a
+              style={linkStyle}
+              href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+            >
+              {docLink.text}
+            </a>
           </li>
-        ))}
-      </ul>
-    </main>
+          {links.map((link) => (
+            <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+              <span>
+                <a
+                  style={linkStyle}
+                  href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+                >
+                  {link.text}
+                </a>
+                {link.badge && (
+                  <span style={badgeStyle} aria-label='New Badge'>
+                    NEW!
+                  </span>
+                )}
+                <p style={descriptionStyle}>{link.description}</p>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </main>
+      <Footer />
+    </>
   );
 };
 
