@@ -1,25 +1,18 @@
 import * as React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import Content from '../components/Content';
 import Footer from '../components/footer';
 
 // styles
-const MainContent = styled('main')`
-  font-family: -apple-system, Roboto, sans-serif, serif;
-  color: #333333;
-  margin: 5rem 2rem 0 2rem;
-  height: 80vh;
-`;
-
-const Container = styled.div`
-  // margin: 1rem auto 0 auto;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-`;
+// const Container = styled.div`
+//   // margin: 1rem auto 0 auto;
+//   max-width: 500px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: left;
+//   justify-content: center;
+// `;
 
 const HeadingText = styled.h1`
   margin: 1rem 0;
@@ -32,7 +25,7 @@ const Paragraph = styled.p`
 const AboutPage = () => {
   return (
     <>
-      <MainContent>
+      {/* <MainContent>
         <Helmet>
           <meta charSet='utf-8' />
           <title>
@@ -65,7 +58,31 @@ const AboutPage = () => {
             </span>
           </Paragraph>
         </Container>
-      </MainContent>
+      </MainContent> */}
+      <Link to='/'>Home</Link>
+      <Content title='About; Adam Ali — Digital Experience Designer, Prototyper, UX Researcher'>
+        <HeadingText>Hi there!</HeadingText>
+        <Paragraph>
+          My name's Adam. Since I was young, I’ve loved technology and design. I
+          grew up in the early days of the internet, and it had a huge influence
+          on me. I'm old enough to remember a time before our lives were
+          dominanted by the massive platforms of today... where the internet was
+          an exciting and uncharted field of discovery and information.
+        </Paragraph>
+        <Paragraph>
+          I want to be part of the community that examines and designs what the
+          future of digital connectivity is.
+        </Paragraph>
+        <Paragraph>
+          When I’m not working or in school, I like to spend my time playing
+          video games, watching anime, reading, running, or lifting weights. I’m
+          currently living &amp; working in the GTA, looking forward to life
+          after the pandemic!{' '}
+          <span role='img' aria-label='Grinning emoji'>
+            😃
+          </span>
+        </Paragraph>
+      </Content>
       <Footer />
     </>
   );
