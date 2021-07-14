@@ -37,10 +37,12 @@ const Content = ({ pageMeta, children }) => {
 };
 
 Content.defaultProps = {
-  title: 'Adam Ali — Digital Experience Designer, Prototyper, UX Researcher',
-  description:
-    'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
-  keywords: ['ux', 'front-end', 'designer', 'developer'],
+  pageMeta: {
+    title: 'Adam Ali — Digital Experience Designer, Prototyper, UX Researcher',
+    description:
+      'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
+    keywords: ['ux', 'front-end', 'designer', 'developer'],
+  },
 };
 
 export default Content;
