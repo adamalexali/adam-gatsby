@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import Content from '../components/Content';
+import Content from '../components/content';
+import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 // styles
@@ -25,62 +26,39 @@ const Paragraph = styled.p`
 const AboutPage = () => {
   return (
     <>
-      {/* <MainContent>
-        <Helmet>
-          <meta charSet='utf-8' />
-          <title>
-            Adam Ali — Digital Experience Designer, Prototyper, UX Researcher;
-            About
-          </title>
-        </Helmet>
-        <Link to='/'>Main page</Link>
-        <Container>
-          <HeadingText>Hi there!</HeadingText>
-          <Paragraph>
-            My name's Adam. Since I was young, I’ve loved technology and design.
-            I grew up in the early days of the internet, and it had a huge
-            influence on me. I'm old enough to remember a time before our lives
-            were dominanted by the massive platforms of today... where the
-            internet was an exciting and uncharted field of discovery and
-            information.
-          </Paragraph>
-          <Paragraph>
-            I want to be part of the community that examines and designs what
-            the future of digital connectivity is.
-          </Paragraph>
-          <Paragraph>
-            When I’m not working or in school, I like to spend my time playing
-            video games, watching anime, reading, running, or lifting weights.
-            I’m currently living &amp; working in the GTA, looking forward to
-            life after the pandemic!{' '}
-            <span role='img' aria-label='Grinning emoji'>
-              😃
-            </span>
-          </Paragraph>
-        </Container>
-      </MainContent> */}
-      <Link to='/'>Home</Link>
-      <Content title='About; Adam Ali — Digital Experience Designer, Prototyper, UX Researcher'>
+      <Navbar />
+      <Content
+        pageMeta={{
+          title:
+            'About | Adam Ali — Digital Experience Designer, Prototyper, UX Researcher',
+          keywords: ['ux', 'front-end', 'designer', 'developer'],
+          description:
+            'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
+        }}
+      >
         <HeadingText>Hi there!</HeadingText>
         <Paragraph>
-          My name's Adam. Since I was young, I’ve loved technology and design. I
-          grew up in the early days of the internet, and it had a huge influence
-          on me. I'm old enough to remember a time before our lives were
-          dominanted by the massive platforms of today... where the internet was
-          an exciting and uncharted field of discovery and information.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
+          dolor purus non enim praesent elementum facilisis leo. Arcu odio ut
+          sem nulla pharetra diam sit amet. Enim nec dui nunc mattis enim ut.
+          Neque sodales ut etiam sit amet nisl purus in mollis. Quisque egestas
+          diam in arcu cursus euismod quis. Sed ullamcorper morbi tincidunt
+          ornare massa eget. Gravida arcu ac tortor dignissim convallis aenean
+          et tortor. A diam sollicitudin tempor id eu nisl. Sed enim ut sem
+          viverra aliquet eget sit. Pretium aenean pharetra magna ac placerat
+          vestibulum lectus mauris ultrices. Semper eget duis at tellus at urna
+          condimentum. Pellentesque adipiscing commodo elit at. Habitasse platea
+          dictumst vestibulum rhoncus. Vel pharetra vel turpis nunc. Tincidunt
+          dui ut ornare lectus sit.
         </Paragraph>
         <Paragraph>
-          I want to be part of the community that examines and designs what the
-          future of digital connectivity is.
-        </Paragraph>
-        <Paragraph>
-          When I’m not working or in school, I like to spend my time playing
-          video games, watching anime, reading, running, or lifting weights. I’m
-          currently living &amp; working in the GTA, looking forward to life
-          after the pandemic!{' '}
-          <span role='img' aria-label='Grinning emoji'>
-            😃
-          </span>
+          At tempor commodo ullamcorper a lacus vestibulum sed arcu. Id semper
+          risus in hendrerit gravida. Ante in nibh mauris cursus. Mauris rhoncus
+          aenean vel elit scelerisque mauris. Enim facilisis gravida neque
+          convallis a cras. Dolor sed viverra ipsum nunc. Duis convallis
+          convallis tellus id. In est ante in nibh mauris. Malesuada fames ac
+          turpis egestas. Suspendisse in est ante in nibh.
         </Paragraph>
       </Content>
       <Footer />
