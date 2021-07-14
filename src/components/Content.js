@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import GlobalStyle from '../theme/globalStyle';
-import '../theme/reset.module.css';
+import './reset.module.css';
 import styled from 'styled-components';
 
 // styles
