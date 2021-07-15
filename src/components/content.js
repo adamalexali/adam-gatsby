@@ -15,9 +15,8 @@ const StyledMain = styled.main`
 //something wrong with query MyQuery...
 const Content = ({ pageMeta, children }) => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query {
       site {
-        id
         siteMetadata {
           title
         }
