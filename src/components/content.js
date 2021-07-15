@@ -12,6 +12,7 @@ const StyledMain = styled.main`
 `;
 
 // markup
+//something wrong with query MyQuery...
 const Content = ({ pageMeta, children }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {

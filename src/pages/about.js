@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Content from '../components/content';
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Content from '../components/Content';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 // styles
 // const Container = styled.div`
