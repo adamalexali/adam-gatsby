@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import Content from '../components/content';
 import Navbar from '../components/navbar';
@@ -25,9 +26,7 @@ const IndexPage = () => {
       <Navbar />
       <Content
         pageMeta={{
-          title:
-            'Adam Ali — Digital Experience Designer, Prototyper, UX Researcher',
-          keywords: ['ux', 'front-end', 'designer', 'developer'],
+          title: 'Home',
           description:
             'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
         }}
@@ -43,6 +42,10 @@ const IndexPage = () => {
           In the meantime, feel free to{' '}
           <Link to='/about'>learn a bit more about me</Link>.
         </Paragraph>
+        {/* <StaticImage
+          alt='Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera'
+          src='https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large'
+        /> */}
       </Content>
       <Footer />
     </>

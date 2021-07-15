@@ -1,5 +1,7 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 import GlobalStyle from '../theme/globalStyle';
 import styled from 'styled-components';
 
@@ -11,6 +13,17 @@ const StyledMain = styled.main`
 
 // markup
 const Content = ({ pageMeta, children }) => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      site {
+        id
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   return (
     <>
       <GlobalStyle />
@@ -25,8 +38,9 @@ const Content = ({ pageMeta, children }) => {
           <meta name='author' content='Adam Ali' />
 
           <meta name='description' content={pageMeta.description} />
-          <meta name='keywords' content={pageMeta.keywords.join(',')} />
-          <title>{pageMeta.title}</title>
+          <title>
+            {pageMeta.title} | {data.site.siteMetadata.title}
+          </title>
           <link rel='stylesheet' href='../theme/reset.css' />
         </Helmet>
         {children}
@@ -35,13 +49,22 @@ const Content = ({ pageMeta, children }) => {
   );
 };
 
-Content.defaultProps = {
-  pageMeta: {
-    title: 'Adam Ali — Digital Experience Designer, Prototyper, UX Researcher',
-    description:
-      'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
-    keywords: ['ux', 'front-end', 'designer', 'developer'],
-  },
-};
+// defaultProps doesn't seem to work with Gatsby, look at https://www.gatsbyjs.com/docs/add-seo-component/ for more info, it mentions using it.
+
+// Content.propTypes = {
+//   pageMeta: {
+//     title: PropTypes.string,
+//     description: PropTypes.string,
+//   },
+// };
+
+// Content.defaultProps = {
+//   pageMeta: {
+//     title: 'Hello!',
+//     description:
+//       'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
+//     keywords: ['ux', 'front-end', 'designer', 'developer'],
+//   },
+// };
 
 export default Content;

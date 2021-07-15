@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+// import '../../public/static/reset.css';
 
 const GlobalStyle = createGlobalStyle`
-// reset css
 /* css reset */
 html,
 body,
@@ -128,18 +128,48 @@ table {
   border-spacing: 0;
 }
 
-
 // my styles
+:root {
+--black: #333333;
+--subtleColor: #c4c4c4;
+--accentColor: #ff3434;
+}
+
 body {
-  font-family: -apple-system, Roboto, sans-serif, serif;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
   margin: 1rem auto;
   max-width: 500px;
-  color: #333333;
+  color: var(--black);
   line-height: normal;
 }
 
 a {
   text-decoration-style: dotted;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+h6 {
+  font-size: 0.67em;
+  font-weight: bold;
 }
 `;
 

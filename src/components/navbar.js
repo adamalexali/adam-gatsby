@@ -12,7 +12,6 @@ const StyledNav = styled.nav`
 `;
 
 const NavText = styled.p`
-  font-size: 0.75rem;
   padding: 0 0.5rem;
   color: #c4c4c4;
 `;

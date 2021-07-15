@@ -28,8 +28,7 @@ const AboutPage = () => {
       <Navbar />
       <Content
         pageMeta={{
-          title:
-            'About | Adam Ali — Digital Experience Designer, Prototyper, UX Researcher',
+          title: 'About',
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
             'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
