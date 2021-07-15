@@ -19,7 +19,13 @@ const NotFoundPage = () => {
   return (
     <>
       <Navbar />
-      <Content>
+      <Content
+        pageMeta={{
+          title: '404',
+          description:
+            'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
+        }}
+      >
         <HeadingText>Page not found</HeadingText>
         <Paragraph>
           Sorry{' '}
