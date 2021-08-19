@@ -28,6 +28,10 @@ const Navbar = () => {
       <NavText>
         <Link to='/about'> About</Link>
       </NavText>
+      <NavText>|</NavText>
+      <NavText>
+        <Link to='/curriculum-vitae'> CV</Link>
+      </NavText>
     </StyledNav>
   );
 };

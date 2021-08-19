@@ -76,22 +76,27 @@ const CurriculumVitae = () => {
           <StyledH2>Experience designer, developer, & researcher</StyledH2>
           <ul>
             <StyledLi>
-              <span role='img' aria-label='round pushpin emoji'>
-                📍
-              </span>{' '}
-              <Paragraph>Toronto, ON</Paragraph>
-            </StyledLi>
-            <StyledLi>
-              <span role='img' aria-label='telephone receiver emoji'>
-                📞
-              </span>{' '}
-              <Paragraph>(289) 926-0221</Paragraph>
-            </StyledLi>
-            <StyledLi>
-              <span role='img' aria-label='envelope emoji'>
-                ✉️
-              </span>{' '}
+              {' '}
               <Paragraph>
+                <span role='img' aria-label='round pushpin emoji'>
+                  📍
+                </span>{' '}
+                Toronto, ON
+              </Paragraph>
+            </StyledLi>
+            <StyledLi>
+              <Paragraph>
+                <span role='img' aria-label='telephone receiver emoji'>
+                  📞
+                </span>{' '}
+                (289) 926-0221
+              </Paragraph>
+            </StyledLi>
+            <StyledLi>
+              <Paragraph>
+                <span role='img' aria-label='envelope emoji'>
+                  ✉️
+                </span>{' '}
                 <a href='mailto:adamalexali@gmail.com'>adamalexali@gmail.com</a>{' '}
               </Paragraph>
             </StyledLi>

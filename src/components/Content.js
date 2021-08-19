@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import GlobalStyle from '../theme/globalStyle';
@@ -12,17 +11,16 @@ const StyledMain = styled.main`
 `;
 
 // markup
-//something wrong with query MyQuery...
 const Content = ({ pageMeta, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <>
@@ -39,7 +37,8 @@ const Content = ({ pageMeta, children }) => {
 
           <meta name='description' content={pageMeta.description} />
           <title>
-            {pageMeta.title} {data.site.siteMetadata.title}
+            {pageMeta.title} Adam Ali—Experience designer, developer, &
+            researcher
           </title>
           <link rel='stylesheet' href='../theme/reset.css' />
         </Helmet>
