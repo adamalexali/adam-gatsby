@@ -11,8 +11,7 @@ const StyledFooter = styled.footer`
 `;
 
 const FooterText = styled.p`
-  font-size: 0.67rem;
-  // color: rgba(255, 255, 255, 0.75);
+  font-size: 0.75rem;
 `;
 
 // component
