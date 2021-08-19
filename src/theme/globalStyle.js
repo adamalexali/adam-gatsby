@@ -158,10 +158,12 @@ a:active, a:hover {
 h1 {
   font-size: 1.5em;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.25em;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 h3 {
   font-size: 1.125em;

@@ -7,20 +7,12 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 // styles
-const HeadingText = styled.h1`
-  margin: 1rem 0;
-`;
-
-const StyledH2 = styled.h2`
-  margin: 1rem 0;
-`;
-
 const StyledSection = styled.section`
   margin: 2rem 0;
 `;
 
 const StyledDiv = styled.div`
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 `;
 
 const StyledUl = styled.ul`
@@ -57,18 +49,20 @@ const IndexPage = () => {
             'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
         }}
       >
-        <StyledSection>
-          <HeadingText>
+        <section>
+          <h1>
             Hello!{' '}
             <span role='img' aria-label='waving hand emoji'>
               👋
             </span>{' '}
             <br />
-          </HeadingText>
+          </h1>
           <Paragraph>
-            I'm <BoldSpan>Adam Ali</BoldSpan>—a human-focused{' '}
-            <BoldSpan>experience designer</BoldSpan>,{' '}
-            <BoldSpan>developer</BoldSpan>, and <BoldSpan>researcher</BoldSpan>{' '}
+            I'm{' '}
+            <BoldSpan>
+              Adam Ali—a human-focused experience designer, developer, and
+              researcher
+            </BoldSpan>{' '}
             exploring the intersections of people, design, and technology. I'm
             particularly interested in user experience design, human-machine
             interaction, digital accessibility, and the relationship between
@@ -82,10 +76,10 @@ const IndexPage = () => {
           alt='Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera'
           src='https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large'
         /> */}
-        </StyledSection>
+        </section>
 
         <StyledSection>
-          <StyledH2>Currently…</StyledH2>
+          <h2>Currently…</h2>
           <ul>
             <li>
               <Paragraph>
@@ -119,16 +113,25 @@ const IndexPage = () => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Contributing to open source software</BoldSpan>{' '}
-                <ItalicSpan>through</ItalicSpan>{' '}
+                <BoldSpan>
+                  Building projects & contributing to open source software
+                </BoldSpan>{' '}
+                <ItalicSpan>using</ItalicSpan>{' '}
                 <a href='https://github.com/adamalexali'>Github</a>
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <BoldSpan>Writing about tech & design</BoldSpan>{' '}
+                <ItalicSpan>on</ItalicSpan>{' '}
+                <a href='https://medium.com/@adamalexali'>Medium</a>
               </Paragraph>
             </li>
           </ul>
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Hiring</StyledH2>
+          <h2>Hiring</h2>
           <Paragraph>
             Considering hiring me? <BoldSpan>Good idea!</BoldSpan> Check out
             these links for my qualifications and work experience:
@@ -148,16 +151,17 @@ const IndexPage = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Process</StyledH2>
+          <h2>Process</h2>
           <Paragraph>
             Every project is different—there is never a one-size-fits-all
             solution. It largely depends on the client and their goals. Because
             of this, I've adopted aspects of the Agile mindset into my general
             process, which gives me the flexibility to adapt to specific client
-            needs. I respect the Manifesto's values of collaborating &
-            empathizing with clients, continuously developing tangible products
-            that deliver high value, and being flexible in response to changes &
-            new insights.
+            needs. I respect the{' '}
+            <a href='https://agilemanifesto.org/'>Manifesto</a>'s values of{' '}
+            collaborating & empathizing with clients, continuously developing
+            tangible products that deliver high value, and being flexible in
+            response to changes & new insights.
           </Paragraph>
           <div>
             <StyledDiv>
@@ -249,7 +253,7 @@ const IndexPage = () => {
                 </li>
               </StyledUl>
             </StyledDiv>
-            <div>
+            <StyledDiv>
               <Paragraph>
                 <span role='img' aria-label='evergreen tree emoji'>
                   🌲
@@ -270,12 +274,12 @@ const IndexPage = () => {
                   </Paragraph>
                 </li>
               </StyledUl>
-            </div>
+            </StyledDiv>
           </div>
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Contact</StyledH2>
+          <h2>Contact</h2>
           <Paragraph>
             <a href='mailto:adamalexali@gmail.com'>adamalexali@gmail.com</a>
           </Paragraph>

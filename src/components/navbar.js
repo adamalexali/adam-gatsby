@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 // styles
 const StyledNav = styled.nav`
-  margin: 2rem auto;
+  margin: 2rem auto 1rem auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,7 +14,7 @@ const StyledNav = styled.nav`
 const NavText = styled.p`
   font-size: 0.75em;
   padding: 0 0.5rem;
-  color: #c4c4c4;
+  color: var(--subtleColor);
 `;
 
 // component

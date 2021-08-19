@@ -4,14 +4,6 @@ import Content from '../components/content';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
-const HeadingText = styled.h1`
-  margin: 1rem 0;
-`;
-
-const StyledH2 = styled.h2`
-  margin: 1rem 0;
-`;
-
 const StyledSection = styled.section`
   margin: 2rem 0;
 `;
@@ -45,8 +37,8 @@ const AboutPage = () => {
             'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
         }}
       >
-        <StyledSection>
-          <HeadingText>About me</HeadingText>
+        <section>
+          <h1>About me</h1>
           <Paragraph>
             It's always nice to know a little bit more about each other—I'm
             grateful you are taking the time to find out more & I would love to
@@ -56,10 +48,10 @@ const AboutPage = () => {
           Consider reaching out using the form below, and we can connect, chat,
           & collaborate!
         </Paragraph> */}
-        </StyledSection>
+        </section>
 
         <StyledSection>
-          <StyledH2>My background</StyledH2>
+          <h2>My background</h2>
           <Paragraph>
             As you've probably already figured out,{' '}
             <BoldSpan>I'm Adam!</BoldSpan> I am a Canadian of Caribbean descent
@@ -98,12 +90,12 @@ const AboutPage = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>
+          <h2>
             <span role='img' aria-label='books emoji'>
               📚
             </span>{' '}
             Currently learning...
-          </StyledH2>
+          </h2>
           <StyledUl>
             <li>
               <Paragraph>MERN stack</Paragraph>
@@ -123,12 +115,12 @@ const AboutPage = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>
+          <h2>
             <span role='img' aria-label='telescope emoji'>
               🔭
             </span>{' '}
             I'm looking to...
-          </StyledH2>
+          </h2>
           <StyledUl>
             <li>
               <Paragraph>grow my computer science skills</Paragraph>
@@ -146,12 +138,12 @@ const AboutPage = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>
+          <h2>
             <span role='img' aria-label='speech balloon emoji'>
               💬
             </span>{' '}
             Ask me about...
-          </StyledH2>
+          </h2>
           <StyledUl>
             <li>
               <Paragraph>UX design</Paragraph>
@@ -169,12 +161,12 @@ const AboutPage = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>
+          <h2>
             <span role='img' aria-label='robot face emoji'>
               🤖
             </span>{' '}
             Engaging with...
-          </StyledH2>
+          </h2>
           <StyledUl>
             <li>
               <Paragraph>

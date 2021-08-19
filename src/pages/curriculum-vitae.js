@@ -4,11 +4,11 @@ import Content from '../components/content';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
-const HeadingText = styled.h1`
+const h1 = styled.h1`
   margin: 1rem 0;
 `;
 
-const StyledH2 = styled.h2`
+const h2 = styled.h2`
   margin: 1rem 0;
 `;
 
@@ -19,7 +19,7 @@ const StyledH3 = styled.h3`
 const DateSpan = styled.span`
   color: rgba(31, 31, 31, 0.8);
   font-style: italic;
-  font-size: 0.67rem;
+  font-size: 0.75rem;
   font-weight: 400;
 `;
 
@@ -70,10 +70,10 @@ const CurriculumVitae = () => {
             'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
         }}
       >
-        <StyledSection>
-          <HeadingText>Curriculum Vitae (CV)</HeadingText>
-          <HeadingText>Adam Ali</HeadingText>
-          <StyledH2>Experience designer, developer, & researcher</StyledH2>
+        <section>
+          <h1>Curriculum Vitae (CV)</h1>
+          <h1>Adam Ali</h1>
+          <h2>Experience designer, developer, & researcher</h2>
           <ul>
             <StyledLi>
               {' '}
@@ -101,10 +101,10 @@ const CurriculumVitae = () => {
               </Paragraph>
             </StyledLi>
           </ul>
-        </StyledSection>
+        </section>
 
         <StyledSection>
-          <StyledH2>About</StyledH2>
+          <h2>About</h2>
           <Paragraph>
             Adam Ali is a human-centred experience designer, developer, and
             researcher exploring the intersections of people, design, and
@@ -133,7 +133,7 @@ const CurriculumVitae = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Education</StyledH2>
+          <h2>Education</h2>
           <StyledDiv>
             <StyledH3>
               George Brown College <DateSpan>(2020–current)</DateSpan>
@@ -157,7 +157,7 @@ const CurriculumVitae = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Experience</StyledH2>
+          <h2>Experience</h2>
           <StyledDiv>
             <StyledH3>
               Web Developer <DateSpan>(freelance; MAY 2021–current)</DateSpan>
@@ -330,7 +330,7 @@ const CurriculumVitae = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Tools & technologies</StyledH2>
+          <h2>Tools & technologies</h2>
           <StyledDiv>
             <StyledH3>Full-Stack Web Development</StyledH3>
             <Paragraph>
@@ -348,7 +348,7 @@ const CurriculumVitae = () => {
         </StyledSection>
 
         <StyledSection>
-          <StyledH2>Awards & recognition</StyledH2>
+          <h2>Awards & recognition</h2>
           <StyledUl>
             <li>
               <Paragraph>
