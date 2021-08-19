@@ -130,46 +130,69 @@ table {
 
 // my styles
 :root {
---black: #333333;
---subtleColor: #c4c4c4;
+--black: #1f1f1f;
+--white: #fff;
+// --subtleColor: #d2d2d2;
+--subtleColor: rgba(31, 31, 31, 0.8);
 --accentColor: #ff3434;
 }
 
 body {
   font-family: -apple-system, Helvetica, Arial, sans-serif;
   margin: 1rem auto;
-  max-width: 500px;
+  max-width: 600px;
+  // background-color: var(--black);
   color: var(--black);
   line-height: normal;
 }
 
 a {
   text-decoration-style: dotted;
+  color: var(--black);
+}
+
+a:active, a:hover {
+  color: var(--subtleColor);
 }
 
 h1 {
-  font-size: 2em;
-  font-weight: bold;
+  // font-size: 1.5em;
+    font-size: 1.125em;
+  font-weight: 600;
 }
 h2 {
-  font-size: 1.5em;
-  font-weight: bold;
+  // font-size: 1.25em;
+    font-size: 1em;
+  font-weight: 600;
 }
 h3 {
-  font-size: 1.17em;
-  font-weight: bold;
+  // font-size: 1.125em;
+  // font-size: 1em;
+  font-size: 0.75em;
+  font-weight: 600;
 }
 h4 {
-  font-size: 1em;
-  font-weight: bold;
+  // font-size: 1em;
+  // font-size: 1em;
+  font-size: 0.75em;
+  font-weight: 600;
 }
 h5 {
-  font-size: 0.83em;
-  font-weight: bold;
+  // font-size: 0.875em;
+  // font-size: 1em;
+  font-size: 0.75em;
+  font-weight: 400;
 }
 h6 {
-  font-size: 0.67em;
-  font-weight: bold;
+  // font-size: 0.813em;
+  // font-size: 1em;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.75em;
+  line-height: 1.5;
 }
 `;
 

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Adam Ali—UX Designer, Developer, Researcher, & Prototyper',
+    title: 'Adam Ali—Experience designer, developer, & researcher',
     siteURL: 'https://adamalexali.com',
     description:
-      'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good.',
+      'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

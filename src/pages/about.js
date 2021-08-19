@@ -1,25 +1,36 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Content from '../components/Content';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
-// styles
-// const Container = styled.div`
-//   // margin: 1rem auto 0 auto;
-//   max-width: 500px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: left;
-//   justify-content: center;
-// `;
+import Content from '../components/content';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const HeadingText = styled.h1`
   margin: 1rem 0;
 `;
 
+const StyledH2 = styled.h2`
+  margin: 1rem 0;
+`;
+
+const StyledSection = styled.section`
+  margin: 2rem 0;
+`;
+
 const Paragraph = styled.p`
   margin-bottom: 1rem;
+`;
+
+const ItalicSpan = styled.span`
+  font-style: italic;
+`;
+
+const BoldSpan = styled.span`
+  font-weight: bold;
+`;
+
+const StyledUl = styled.ul`
+  list-style-type: disc;
+  padding-left: 2.5rem;
 `;
 
 const AboutPage = () => {
@@ -28,36 +39,170 @@ const AboutPage = () => {
       <Navbar />
       <Content
         pageMeta={{
-          title: 'About',
+          title: 'About |',
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
-            'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
+            'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
         }}
       >
-        <HeadingText>Hi there!</HeadingText>
-        <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-          dolor purus non enim praesent elementum facilisis leo. Arcu odio ut
-          sem nulla pharetra diam sit amet. Enim nec dui nunc mattis enim ut.
-          Neque sodales ut etiam sit amet nisl purus in mollis. Quisque egestas
-          diam in arcu cursus euismod quis. Sed ullamcorper morbi tincidunt
-          ornare massa eget. Gravida arcu ac tortor dignissim convallis aenean
-          et tortor. A diam sollicitudin tempor id eu nisl. Sed enim ut sem
-          viverra aliquet eget sit. Pretium aenean pharetra magna ac placerat
-          vestibulum lectus mauris ultrices. Semper eget duis at tellus at urna
-          condimentum. Pellentesque adipiscing commodo elit at. Habitasse platea
-          dictumst vestibulum rhoncus. Vel pharetra vel turpis nunc. Tincidunt
-          dui ut ornare lectus sit.
-        </Paragraph>
-        <Paragraph>
-          At tempor commodo ullamcorper a lacus vestibulum sed arcu. Id semper
-          risus in hendrerit gravida. Ante in nibh mauris cursus. Mauris rhoncus
-          aenean vel elit scelerisque mauris. Enim facilisis gravida neque
-          convallis a cras. Dolor sed viverra ipsum nunc. Duis convallis
-          convallis tellus id. In est ante in nibh mauris. Malesuada fames ac
-          turpis egestas. Suspendisse in est ante in nibh.
-        </Paragraph>
+        <StyledSection>
+          <HeadingText>About me</HeadingText>
+          <Paragraph>
+            It's always nice to know a little bit more about each other—I'm
+            grateful you are taking the time to find out more & I would love to
+            hear from you.
+          </Paragraph>
+          {/* <Paragraph>
+          Consider reaching out using the form below, and we can connect, chat,
+          & collaborate!
+        </Paragraph> */}
+        </StyledSection>
+
+        <StyledSection>
+          <StyledH2>My background</StyledH2>
+          <Paragraph>
+            As you've probably already figured out,{' '}
+            <BoldSpan>I'm Adam!</BoldSpan> I am a Canadian of Caribbean descent
+            currently based in and around the Greater Toronto Area.
+          </Paragraph>
+          <Paragraph>
+            I started my post-secondary career at McMaster University, but I
+            eventually realized I wasn't enjoying what I was studying. I took
+            some time off to work and pivoted to interaction design &
+            development at George Brown College, earning an advanced diploma.
+            From there, I bridged into my current program, where I hope to
+            receive my bachelor's in digital experience design within a few
+            months! Throughout my time at GBC, I've developed skills across a
+            variety of disciplines, including <BoldSpan>UX</BoldSpan>,{' '}
+            <BoldSpan>interface design</BoldSpan>,{' '}
+            <BoldSpan>content writing</BoldSpan>,{' '}
+            <BoldSpan>human-machine interaction</BoldSpan>,{' '}
+            <BoldSpan>usability</BoldSpan>, <BoldSpan>accessibility</BoldSpan>,{' '}
+            <BoldSpan>XR & immersive environments</BoldSpan>, and{' '}
+            <BoldSpan>data visualization</BoldSpan>.
+          </Paragraph>
+          <Paragraph>
+            It was during my time at the college that I also became interested
+            in not only the design aspect but also the development one—I wanted
+            to learn how to actually build the products and services I was
+            designing for! Over the past few years, I've been learning{' '}
+            <BoldSpan>full-stack web development</BoldSpan> on my own time, and
+            have recently taken up learning computer science more formally as I
+            get more fascinated by AI & machine learning and their impact in the
+            digital space. My goal is to have a diverse skillset that allows me
+            to work effectively in cross-functional teams. Ultimately, I want to
+            create a more <BoldSpan>accessible</BoldSpan>,{' '}
+            <BoldSpan>inclusive</BoldSpan>, and <BoldSpan>open</BoldSpan>{' '}
+            digital public space—in whatever ways I can achieve that!
+          </Paragraph>
+        </StyledSection>
+
+        <StyledSection>
+          <StyledH2>
+            <span role='img' aria-label='books emoji'>
+              📚
+            </span>{' '}
+            Currently learning...
+          </StyledH2>
+          <StyledUl>
+            <li>
+              <Paragraph>MERN stack</Paragraph>
+            </li>
+            <li>
+              <Paragraph>SQL</Paragraph>
+            </li>
+            <li>
+              <Paragraph>web accessibility</Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                creative coding with <a href='https://p5js.org/'>p5.js</a>
+              </Paragraph>
+            </li>
+          </StyledUl>
+        </StyledSection>
+
+        <StyledSection>
+          <StyledH2>
+            <span role='img' aria-label='telescope emoji'>
+              🔭
+            </span>{' '}
+            I'm looking to...
+          </StyledH2>
+          <StyledUl>
+            <li>
+              <Paragraph>grow my computer science skills</Paragraph>
+            </li>
+            <li>
+              <Paragraph>create more projects working with big data</Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                get more involved in the design & development of digital
+                products, systems, & services for social good
+              </Paragraph>
+            </li>
+          </StyledUl>
+        </StyledSection>
+
+        <StyledSection>
+          <StyledH2>
+            <span role='img' aria-label='speech balloon emoji'>
+              💬
+            </span>{' '}
+            Ask me about...
+          </StyledH2>
+          <StyledUl>
+            <li>
+              <Paragraph>UX design</Paragraph>
+            </li>
+            <li>
+              <Paragraph>front-end development</Paragraph>
+            </li>
+            <li>
+              <Paragraph>media & information theory</Paragraph>
+            </li>
+            <li>
+              <Paragraph>digital rights & ethics</Paragraph>
+            </li>
+          </StyledUl>
+        </StyledSection>
+
+        <StyledSection>
+          <StyledH2>
+            <span role='img' aria-label='robot face emoji'>
+              🤖
+            </span>{' '}
+            Engaging with...
+          </StyledH2>
+          <StyledUl>
+            <li>
+              <Paragraph>
+                <ItalicSpan>A New City O/S </ItalicSpan>(reading)
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <ItalicSpan>Dune </ItalicSpan>(reading)
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <ItalicSpan>Hunter x Hunter </ItalicSpan>(watching)
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <ItalicSpan>Dragon Ball Z </ItalicSpan>(watching)
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <ItalicSpan>Mass Effect 2 </ItalicSpan>(playing)
+              </Paragraph>
+            </li>
+          </StyledUl>
+        </StyledSection>
       </Content>
       <Footer />
     </>

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 // styles
 const StyledMain = styled.main`
-  height: 100vh;
+  // height: 100vh;
   padding: 1rem;
 `;
 
@@ -39,7 +39,7 @@ const Content = ({ pageMeta, children }) => {
 
           <meta name='description' content={pageMeta.description} />
           <title>
-            {pageMeta.title} | {data.site.siteMetadata.title}
+            {pageMeta.title} {data.site.siteMetadata.title}
           </title>
           <link rel='stylesheet' href='../theme/reset.css' />
         </Helmet>
@@ -62,7 +62,7 @@ const Content = ({ pageMeta, children }) => {
 //   pageMeta: {
 //     title: 'Hello!',
 //     description:
-//       'Adam Ali is a multidisciplinary experience designer exploring the intersections of technology, design, and society—specifically focused on digital public spaces, XR, accessibility, and tech for social good',
+//       'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
 //     keywords: ['ux', 'front-end', 'designer', 'developer'],
 //   },
 // };
