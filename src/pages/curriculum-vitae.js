@@ -371,6 +371,7 @@ const CurriculumVitae = () => {
           </StyledUl>
         </StyledSection>
       </Content>
+      <Footer />
     </>
   );
 };
