@@ -33,7 +33,7 @@ const BoldSpan = styled.span`
   font-weight: bold;
 `;
 
-const StyledMark = styled.mark`
+const Highlighted = styled.span`
   background-color: #fff2cc;
 `;
 
@@ -59,12 +59,14 @@ const IndexPage = () => {
           </h1>
           <Paragraph>
             I'm{' '}
-            <BoldSpan>
-              Adam Ali—a human-focused experience designer, developer, and
-              researcher
-            </BoldSpan>{' '}
-            exploring the intersections of people, design, and technology. I'm
-            particularly interested in user experience design, human-machine
+            <Highlighted>
+              <BoldSpan>
+                Adam Ali—a human-focused experience designer, developer, and
+                researcher
+              </BoldSpan>{' '}
+              exploring the intersections of people, design, and technology.
+            </Highlighted>{' '}
+            I'm particularly interested in user experience design, human-machine
             interaction, digital accessibility, and the relationship between
             tech & ethics in the public sector.
           </Paragraph>
@@ -106,35 +108,35 @@ const IndexPage = () => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Doing freelance web development</BoldSpan>{' '}
+                <BoldSpan>Freelancing web development</BoldSpan>{' '}
                 <ItalicSpan>using</ItalicSpan>{' '}
                 <a href='https://webflow.com'>Webflow</a>
               </Paragraph>
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>
-                  Building projects & contributing to open source software
-                </BoldSpan>{' '}
+                <BoldSpan>Building projects</BoldSpan>{' '}
                 <ItalicSpan>using</ItalicSpan>{' '}
                 <a href='https://github.com/adamalexali'>Github</a>
               </Paragraph>
             </li>
-            <li>
+            {/* <li>
               <Paragraph>
                 <BoldSpan>Writing about tech & design</BoldSpan>{' '}
                 <ItalicSpan>on</ItalicSpan>{' '}
                 <a href='https://medium.com/@adamalexali'>Medium</a>
               </Paragraph>
-            </li>
+            </li> */}
           </ul>
         </StyledSection>
 
         <StyledSection>
           <h2>Hiring</h2>
           <Paragraph>
-            Considering hiring me? <BoldSpan>Good idea!</BoldSpan> Check out
-            these links for my qualifications and work experience:
+            Considering hiring me? <BoldSpan>Good idea!</BoldSpan>{' '}
+            <Highlighted>
+              Check out these links for my qualifications and work experience:
+            </Highlighted>
           </Paragraph>
           <ul>
             <li>
@@ -159,9 +161,11 @@ const IndexPage = () => {
             process, which gives me the flexibility to adapt to specific client
             needs. I respect the{' '}
             <a href='https://agilemanifesto.org/'>Manifesto</a>'s values of{' '}
-            collaborating & empathizing with clients, continuously developing
-            tangible products that deliver high value, and being flexible in
-            response to changes & new insights.
+            <Highlighted>
+              collaborating & empathizing with clients, continuously developing
+              tangible products that deliver high value, and being flexible in
+              response to changes & new insights.
+            </Highlighted>
           </Paragraph>
           <div>
             <StyledDiv>
@@ -284,8 +288,10 @@ const IndexPage = () => {
             <a href='mailto:adamalexali@gmail.com'>adamalexali@gmail.com</a>
           </Paragraph>
           <Paragraph>
-            <BoldSpan>@adamalexali</BoldSpan> on all major social media
-            platforms
+            <Highlighted>
+              <BoldSpan>@adamalexali</BoldSpan> on all major social media
+              platforms
+            </Highlighted>
           </Paragraph>
           <Paragraph>
             <span role='img' aria-label='hot beverage emoji'>

@@ -25,6 +25,10 @@ const StyledUl = styled.ul`
   padding-left: 2.5rem;
 `;
 
+const Highlighted = styled.span`
+  background-color: #fff2cc;
+`;
+
 const AboutPage = () => {
   return (
     <>
@@ -53,7 +57,6 @@ const AboutPage = () => {
         <StyledSection>
           <h2>My background</h2>
           <Paragraph>
-            As you've probably already figured out,{' '}
             <BoldSpan>I'm Adam!</BoldSpan> I am a Canadian of Caribbean descent
             currently based in and around the Greater Toronto Area.
           </Paragraph>
@@ -64,28 +67,35 @@ const AboutPage = () => {
             development at George Brown College, earning an advanced diploma.
             From there, I bridged into my current program, where I hope to
             receive my bachelor's in digital experience design within a few
-            months! Throughout my time at GBC, I've developed skills across a
-            variety of disciplines, including <BoldSpan>UX</BoldSpan>,{' '}
-            <BoldSpan>interface design</BoldSpan>,{' '}
-            <BoldSpan>content writing</BoldSpan>,{' '}
-            <BoldSpan>human-machine interaction</BoldSpan>,{' '}
-            <BoldSpan>usability</BoldSpan>, <BoldSpan>accessibility</BoldSpan>,{' '}
-            <BoldSpan>XR & immersive environments</BoldSpan>, and{' '}
-            <BoldSpan>data visualization</BoldSpan>.
+            months!
+          </Paragraph>
+          <Paragraph>
+            Throughout my time at GBC, I've developed skills across a variety of
+            disciplines, including{' '}
+            <Highlighted>
+              UX research & design, interface design, content writing,
+              human-machine interaction, usability, accessibility, XR &
+              immersive environments, and data visualization
+            </Highlighted>
+            . I aim to continue studying and developing skills in these areas
+            beyond my academic career; as these are all fields of increasing
+            importance in our digital society.
           </Paragraph>
           <Paragraph>
             It was during my time at the college that I also became interested
             in not only the design aspect but also the development one—I wanted
             to learn how to actually build the products and services I was
-            designing for! Over the past few years, I've been learning{' '}
-            <BoldSpan>full-stack web development</BoldSpan> on my own time, and
-            have recently taken up learning computer science more formally as I
-            get more fascinated by AI & machine learning and their impact in the
-            digital space. My goal is to have a diverse skillset that allows me
-            to work effectively in cross-functional teams. Ultimately, I want to
-            create a more <BoldSpan>accessible</BoldSpan>,{' '}
-            <BoldSpan>inclusive</BoldSpan>, and <BoldSpan>open</BoldSpan>{' '}
-            digital public space—in whatever ways I can achieve that!
+            designing for! Over the past few years, I've been learning
+            full-stack web development on my own time, and have recently taken
+            up learning computer science more formally as I get more fascinated
+            by AI & machine learning and their impact in the digital space.{' '}
+            <Highlighted>
+              My goal is to have a diverse skillset that allows me to work
+              effectively in cross-functional teams. Ultimately, I want to{' '}
+              create a more <BoldSpan>accessible, inclusive, and open</BoldSpan>{' '}
+              digital public space
+            </Highlighted>
+            —in whatever ways I can achieve that!
           </Paragraph>
         </StyledSection>
 
