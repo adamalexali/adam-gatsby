@@ -71,13 +71,10 @@ const AboutPage = () => {
           </Paragraph>
           <Paragraph>
             Throughout my time at GBC, I've developed skills across a variety of
-            disciplines, including{' '}
-            <Highlighted>
-              UX research & design, interface design, content writing,
-              human-machine interaction, usability, accessibility, XR &
-              immersive environments, and data visualization
-            </Highlighted>
-            . I aim to continue studying and developing skills in these areas
+            disciplines, including UX research & design, interface design,
+            content writing, human-machine interaction, usability,
+            accessibility, XR & immersive environments, and data visualization .
+            I aim to continue studying and developing skills in these areas
             beyond my academic career; as these are all fields of increasing
             importance in our digital society.
           </Paragraph>
@@ -88,14 +85,11 @@ const AboutPage = () => {
             designing for! Over the past few years, I've been learning
             full-stack web development on my own time, and have recently taken
             up learning computer science more formally as I get more fascinated
-            by AI & machine learning and their impact in the digital space.{' '}
-            <Highlighted>
-              My goal is to have a diverse skillset that allows me to work
-              effectively in cross-functional teams. Ultimately, I want to{' '}
-              create a more <BoldSpan>accessible, inclusive, and open</BoldSpan>{' '}
-              digital public space
-            </Highlighted>
-            —in whatever ways I can achieve that!
+            by AI & machine learning and their impact in the digital space. My
+            goal is to have a diverse skillset that allows me to work
+            effectively in cross-functional teams. Ultimately, I want to create
+            a more <BoldSpan>accessible, inclusive, and open</BoldSpan> digital
+            public space —in whatever ways I can achieve that!
           </Paragraph>
         </StyledSection>
 

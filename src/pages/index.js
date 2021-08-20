@@ -59,14 +59,12 @@ const IndexPage = () => {
           </h1>
           <Paragraph>
             I'm{' '}
-            <Highlighted>
-              <BoldSpan>
-                Adam Ali—a human-focused experience designer, developer, and
-                researcher
-              </BoldSpan>{' '}
-              exploring the intersections of people, design, and technology.
-            </Highlighted>{' '}
-            I'm particularly interested in user experience design, human-machine
+            <BoldSpan>
+              Adam Ali—a human-focused experience designer, developer, and
+              researcher
+            </BoldSpan>{' '}
+            exploring the intersections of people, design, and technology. I'm
+            particularly interested in user experience design, human-machine
             interaction, digital accessibility, and the relationship between
             tech & ethics in the public sector.
           </Paragraph>
@@ -133,10 +131,8 @@ const IndexPage = () => {
         <StyledSection>
           <h2>Hiring</h2>
           <Paragraph>
-            Considering hiring me? <BoldSpan>Good idea!</BoldSpan>{' '}
-            <Highlighted>
-              Check out these links for my qualifications and work experience:
-            </Highlighted>
+            Considering hiring me? <BoldSpan>Good idea!</BoldSpan> Check out
+            these links for my qualifications and work experience:
           </Paragraph>
           <ul>
             <li>
@@ -161,11 +157,9 @@ const IndexPage = () => {
             process, which gives me the flexibility to adapt to specific client
             needs. I respect the{' '}
             <a href='https://agilemanifesto.org/'>Manifesto</a>'s values of{' '}
-            <Highlighted>
-              collaborating & empathizing with clients, continuously developing
-              tangible products that deliver high value, and being flexible in
-              response to changes & new insights.
-            </Highlighted>
+            collaborating & empathizing with clients, continuously developing
+            tangible products that deliver high value, and being flexible in
+            response to changes & new insights.
           </Paragraph>
           <div>
             <StyledDiv>
@@ -288,10 +282,8 @@ const IndexPage = () => {
             <a href='mailto:adamalexali@gmail.com'>adamalexali@gmail.com</a>
           </Paragraph>
           <Paragraph>
-            <Highlighted>
-              <BoldSpan>@adamalexali</BoldSpan> on all major social media
-              platforms
-            </Highlighted>
+            <BoldSpan>@adamalexali</BoldSpan> on all major social media
+            platforms
           </Paragraph>
           <Paragraph>
             <span role='img' aria-label='hot beverage emoji'>
