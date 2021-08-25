@@ -4,29 +4,26 @@ import Content from '../components/content';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
+const Paragraph = styled.p`
+  margin-bottom: 0.5rem;
+`;
+
 const StyledSection = styled.section`
   margin: 2rem 0;
 `;
 
-const Paragraph = styled.p`
-  margin-bottom: 1rem;
-`;
-
-const ItalicSpan = styled.span`
-  font-style: italic;
+const StyledUl = styled.ul`
+  list-style-type: disc;
+  // emoji x-distance + 22px
+  padding-left: 2.813rem;
 `;
 
 const BoldSpan = styled.span`
   font-weight: bold;
 `;
 
-const StyledUl = styled.ul`
-  list-style-type: disc;
-  padding-left: 2.5rem;
-`;
-
-const Highlighted = styled.span`
-  background-color: #fff2cc;
+const ItalicSpan = styled.span`
+  font-style: italic;
 `;
 
 const AboutPage = () => {
@@ -61,13 +58,12 @@ const AboutPage = () => {
             currently based in and around the Greater Toronto Area.
           </Paragraph>
           <Paragraph>
-            I started my post-secondary career at McMaster University, but I
-            eventually realized I wasn't enjoying what I was studying. I took
-            some time off to work and pivoted to interaction design &
-            development at George Brown College, earning an advanced diploma.
-            From there, I bridged into my current program, where I hope to
-            receive my bachelor's in digital experience design within a few
-            months!
+            I started my post-secondary career at McMaster University, but ended
+            up taking some time off to work before pivoting to interaction
+            design & development at George Brown College, where I earned an
+            advanced diploma. From there, I bridged into my current program,
+            where I hope to receive my bachelor's in digital experience design
+            within a few months!
           </Paragraph>
           <Paragraph>
             Throughout my time at GBC, I've developed skills across a variety of

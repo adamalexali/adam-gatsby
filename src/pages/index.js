@@ -7,22 +7,33 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 // styles
+const StyledH3 = styled.h3`
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+`;
+
+const Paragraph = styled.p`
+  margin-bottom: 0.5rem;
+`;
+
+const StyledDiv = styled.div`
+  margin-bottom: 1.25rem;
+`;
+
+const StyledDivMarginTop = styled(StyledDiv)`
+  margin-top: 1.25rem;
+`;
+
 const StyledSection = styled.section`
   margin: 2rem 0;
 `;
 
-const StyledDiv = styled.div`
-  margin-top: 2rem;
-`;
-
 const StyledUl = styled.ul`
   list-style-type: disc;
-  padding-left: 1.5rem;
-`;
-
-const Paragraph = styled.p`
-  margin-bottom: 1rem;
-  // display: inline-block;
+  // emoji x-distance + 22px
+  padding-left: 2.563rem;
 `;
 
 const ItalicSpan = styled.span`
@@ -162,13 +173,13 @@ const IndexPage = () => {
             response to changes & new insights.
           </Paragraph>
           <div>
-            <StyledDiv>
-              <Paragraph>
+            <StyledDivMarginTop>
+              <StyledH3>
                 <span role='img' aria-label='yellow heart emoji'>
                   💛
                 </span>{' '}
                 <BoldSpan>Empathize</BoldSpan>
-              </Paragraph>
+              </StyledH3>
               <StyledUl>
                 <li>
                   <Paragraph>
@@ -183,14 +194,14 @@ const IndexPage = () => {
                   </Paragraph>
                 </li>
               </StyledUl>
-            </StyledDiv>
+            </StyledDivMarginTop>
             <StyledDiv>
-              <Paragraph>
+              <StyledH3>
                 <span role='img' aria-label='spiral notepad emoji'>
                   🗒
                 </span>{' '}
                 <BoldSpan>Contextualize</BoldSpan>
-              </Paragraph>
+              </StyledH3>
               <StyledUl>
                 <li>
                   <Paragraph>
@@ -207,12 +218,12 @@ const IndexPage = () => {
               </StyledUl>
             </StyledDiv>
             <StyledDiv>
-              <Paragraph>
+              <StyledH3>
                 <span role='img' aria-label='hammer and wrench emoji'>
                   🛠
                 </span>{' '}
                 <BoldSpan>Develop</BoldSpan>
-              </Paragraph>
+              </StyledH3>
               <StyledUl>
                 <li>
                   <Paragraph>
@@ -230,12 +241,12 @@ const IndexPage = () => {
               </StyledUl>
             </StyledDiv>
             <StyledDiv>
-              <Paragraph>
+              <StyledH3>
                 <span role='img' aria-label='rocket emoji'>
                   🚀
                 </span>{' '}
                 <BoldSpan>Deploy</BoldSpan>
-              </Paragraph>
+              </StyledH3>
               <StyledUl>
                 <li>
                   <Paragraph>
@@ -252,12 +263,12 @@ const IndexPage = () => {
               </StyledUl>
             </StyledDiv>
             <StyledDiv>
-              <Paragraph>
+              <StyledH3>
                 <span role='img' aria-label='evergreen tree emoji'>
                   🌲
                 </span>{' '}
                 <BoldSpan>Reflect</BoldSpan>
-              </Paragraph>
+              </StyledH3>
               <StyledUl>
                 <li>
                   <Paragraph>

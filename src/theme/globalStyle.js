@@ -183,7 +183,7 @@ h6 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 0.875em;
   line-height: 1.5;
 }
 `;

@@ -16,46 +16,43 @@ const StyledH3 = styled.h3`
   margin-bottom: 0.5rem;
 `;
 
-const DateSpan = styled.span`
-  color: rgba(31, 31, 31, 0.8);
-  font-style: italic;
-  font-size: 0.75rem;
-  font-weight: 400;
+const StyledH5 = styled.h5`
+  margin-bottom: 0.5rem;
 `;
 
-const StyledH5 = styled.h5`
-  margin-bottom: 1rem;
+const Paragraph = styled.p`
+  margin-bottom: 0.5rem;
+`;
+
+const StyledDiv = styled.div`
+  margin-bottom: 1.25rem;
 `;
 
 const StyledSection = styled.section`
   margin: 2rem 0;
 `;
 
-const StyledDiv = styled.div`
-  margin-bottom: 2rem;
-`;
-
-const Paragraph = styled.p`
-  margin-bottom: 1rem;
-`;
-
-const ItalicSpan = styled.span`
-  font-style: italic;
-`;
-
-const BoldSpan = styled.span`
-  font-weight: bold;
-`;
-
 const StyledUl = styled.ul`
   list-style-type: disc;
-  padding-left: 1.5rem;
+  // 22px
+  padding-left: 1.375rem;
 `;
 
 const StyledLi = styled.li`
   display: grid;
   grid-column-gap: 1rem;
   grid-template-columns: auto 1fr;
+`;
+
+const StyledSpan = styled.span`
+  margin-right: 0.5rem;
+`;
+
+const DateSpan = styled.span`
+  color: rgba(31, 31, 31, 0.8);
+  font-style: italic;
+  font-size: 0.75rem;
+  font-weight: 400;
 `;
 
 const CurriculumVitae = () => {
@@ -78,25 +75,25 @@ const CurriculumVitae = () => {
             <StyledLi>
               {' '}
               <Paragraph>
-                <span role='img' aria-label='round pushpin emoji'>
+                <StyledSpan role='img' aria-label='round pushpin emoji'>
                   📍
-                </span>{' '}
+                </StyledSpan>{' '}
                 Toronto, ON
               </Paragraph>
             </StyledLi>
             <StyledLi>
               <Paragraph>
-                <span role='img' aria-label='telephone receiver emoji'>
+                <StyledSpan role='img' aria-label='telephone receiver emoji'>
                   📞
-                </span>{' '}
-                (289) 926-0221
+                </StyledSpan>{' '}
+                <a href='tel:+1 289-926-0221'>+1 (289)-926-0221</a>
               </Paragraph>
             </StyledLi>
             <StyledLi>
               <Paragraph>
-                <span role='img' aria-label='envelope emoji'>
+                <StyledSpan role='img' aria-label='envelope emoji'>
                   ✉️
-                </span>{' '}
+                </StyledSpan>{' '}
                 <a href='mailto:adamalexali@gmail.com'>adamalexali@gmail.com</a>{' '}
               </Paragraph>
             </StyledLi>
@@ -152,7 +149,7 @@ const CurriculumVitae = () => {
             <StyledH3>
               McMaster University <DateSpan>(2014–2017)</DateSpan>
             </StyledH3>
-            <Paragraph>Social Sciences program</Paragraph>
+            <Paragraph>Social Sciences</Paragraph>
           </div>
         </StyledSection>
 
@@ -332,10 +329,10 @@ const CurriculumVitae = () => {
         <StyledSection>
           <h2>Tools & technologies</h2>
           <StyledDiv>
-            <StyledH3>Full-Stack Web Development</StyledH3>
+            <StyledH3>Development</StyledH3>
             <Paragraph>
-              HTML, CSS, JavaScript, Bootstrap, React, Node, Gatsby,
-              Styled-Components, Git, Github, Webflow, Netlify, Express, MongoDB
+              HTML, CSS, JavaScript, Bootstrap, React, Node, Express, MongoDB,
+              Gatsby, Styled-Components, Git, Github, Webflow, Netlify, Unity 3D
             </Paragraph>
           </StyledDiv>
           <div>
