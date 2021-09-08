@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import Content from '../components/content';
 import Navbar from '../components/navbar';
@@ -45,7 +44,7 @@ const BoldSpan = styled.span`
 `;
 
 const Highlighted = styled.span`
-  background-color: #fff2cc;
+  background-color: #fdcc57;
 `;
 
 // markup
@@ -83,10 +82,6 @@ const IndexPage = () => {
             If you'd like, you can also{' '}
             <Link to='/about'>find out more about me!</Link>
           </Paragraph>
-          {/* <StaticImage
-          alt='Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera'
-          src='https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large'
-        /> */}
         </section>
 
         <StyledSection>
@@ -162,6 +157,12 @@ const IndexPage = () => {
         <StyledSection>
           <h2>Process</h2>
           <Paragraph>
+            <BoldSpan>
+              Find out more about my <Link to='/design'>design</Link> &{' '}
+              <Link to='/development'>development</Link> process & experience.
+            </BoldSpan>
+          </Paragraph>
+          <Paragraph>
             Every project is different—there is never a one-size-fits-all
             solution. It largely depends on the client and their goals. Because
             of this, I've adopted aspects of the Agile mindset into my general
@@ -184,13 +185,13 @@ const IndexPage = () => {
                 <li>
                   <Paragraph>
                     Working with the client, learn about their goals, their
-                    motivations, and what value it provides
+                    motivations, and their business.
                   </Paragraph>
                 </li>
                 <li>
                   <Paragraph>
                     Continuous interaction and engagement with the client
-                    throughout the development cycle
+                    throughout the development cycle.
                   </Paragraph>
                 </li>
               </StyledUl>
@@ -205,14 +206,14 @@ const IndexPage = () => {
               <StyledUl>
                 <li>
                   <Paragraph>
-                    Communicating the value of their business
+                    Communicating the value of their business.
                   </Paragraph>
                 </li>
                 <li>
                   <Paragraph>
                     High-value content takes priority. This involves gathering
                     insights about the client's clients—their users—to determine
-                    their goals and frustrations (and deliver value)
+                    their goals and frustrations.
                   </Paragraph>
                 </li>
               </StyledUl>
@@ -228,14 +229,14 @@ const IndexPage = () => {
                 <li>
                   <Paragraph>
                     Ideate, prototype, and develop the high-value feature for
-                    this cycle
+                    this cycle.
                   </Paragraph>
                 </li>
                 <li>
                   <Paragraph>
                     Testing and building based on usability and accessibility
                     heuristics, ensuring access is universal while still meeting
-                    client and user needs
+                    client and user needs.
                   </Paragraph>
                 </li>
               </StyledUl>
@@ -251,13 +252,14 @@ const IndexPage = () => {
                 <li>
                   <Paragraph>
                     Deliver the solution to the client—the high-value working
-                    product/system/service
+                    product/system/service.
                   </Paragraph>
                 </li>
                 <li>
                   <Paragraph>
                     This deployment may not be the final iteration, but the
-                    client should still find value in every delivery
+                    client should be able to walk away satisfied after every
+                    iteration.
                   </Paragraph>
                 </li>
               </StyledUl>
@@ -273,13 +275,13 @@ const IndexPage = () => {
                 <li>
                   <Paragraph>
                     Looking at the most recent cycle for areas where efficiency
-                    or effectiveness can be improved
+                    or effectiveness can be improved.
                   </Paragraph>
                 </li>
                 <li>
                   <Paragraph>
                     Recognizing lessons learned from this project that can be
-                    applied to future ones
+                    applied to future ones.
                   </Paragraph>
                 </li>
               </StyledUl>
@@ -287,14 +289,16 @@ const IndexPage = () => {
           </div>
         </StyledSection>
 
-        <StyledSection>
+        <section>
           <h2>Contact</h2>
           <Paragraph>
             <a href='mailto:adamalexali@gmail.com'>adamalexali@gmail.com</a>
           </Paragraph>
           <Paragraph>
-            <BoldSpan>@adamalexali</BoldSpan> on all major social media
-            platforms
+            <BoldSpan>
+              <Highlighted>@adamalexali</Highlighted>
+            </BoldSpan>{' '}
+            on all major social media platforms
           </Paragraph>
           <Paragraph>
             <span role='img' aria-label='hot beverage emoji'>
@@ -304,7 +308,7 @@ const IndexPage = () => {
               Buy me a coffee!
             </a>
           </Paragraph>
-        </StyledSection>
+        </section>
       </Content>
       <Footer />
     </>

@@ -4,6 +4,8 @@ import Content from '../components/content';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
+// styles
+
 const Paragraph = styled.p`
   margin-bottom: 0.5rem;
 `;
@@ -67,10 +69,13 @@ const AboutPage = () => {
           </Paragraph>
           <Paragraph>
             Throughout my time at GBC, I've developed skills across a variety of
-            disciplines, including UX research & design, interface design,
-            content writing, human-machine interaction, usability,
-            accessibility, XR & immersive environments, and data visualization .
-            I aim to continue studying and developing skills in these areas
+            disciplines, including{' '}
+            <BoldSpan>
+              UX research & design, interface design, content writing,
+              human-machine interaction, usability, accessibility, XR &
+              immersive environments, and data visualization
+            </BoldSpan>
+            . I aim to continue studying and developing skills in these areas
             beyond my academic career; as these are all fields of increasing
             importance in our digital society.
           </Paragraph>
@@ -78,14 +83,14 @@ const AboutPage = () => {
             It was during my time at the college that I also became interested
             in not only the design aspect but also the development one—I wanted
             to learn how to actually build the products and services I was
-            designing for! Over the past few years, I've been learning
-            full-stack web development on my own time, and have recently taken
-            up learning computer science more formally as I get more fascinated
-            by AI & machine learning and their impact in the digital space. My
-            goal is to have a diverse skillset that allows me to work
-            effectively in cross-functional teams. Ultimately, I want to create
-            a more <BoldSpan>accessible, inclusive, and open</BoldSpan> digital
-            public space —in whatever ways I can achieve that!
+            designing for! Over the past few years, I've been learning{' '}
+            <BoldSpan>full-stack web development</BoldSpan> on my own time, and
+            have recently taken up learning computer science more formally as I
+            get more fascinated by AI & machine learning and their impact in the
+            digital space. My goal is to have a diverse skillset that allows me
+            to work effectively in cross-functional teams. Ultimately, I want to
+            create a more <BoldSpan>accessible, inclusive, and open</BoldSpan>{' '}
+            digital public space —in whatever ways I can achieve that!
           </Paragraph>
         </StyledSection>
 
@@ -152,7 +157,10 @@ const AboutPage = () => {
               <Paragraph>front-end development</Paragraph>
             </li>
             <li>
-              <Paragraph>media & information theory</Paragraph>
+              <Paragraph>new & emerging technology</Paragraph>
+            </li>
+            <li>
+              <Paragraph>media studies</Paragraph>
             </li>
             <li>
               <Paragraph>digital rights & ethics</Paragraph>
@@ -160,7 +168,7 @@ const AboutPage = () => {
           </StyledUl>
         </StyledSection>
 
-        <StyledSection>
+        <section>
           <h2>
             <span role='img' aria-label='robot face emoji'>
               🤖
@@ -170,31 +178,14 @@ const AboutPage = () => {
           <StyledUl>
             <li>
               <Paragraph>
-                <ItalicSpan>A New City O/S </ItalicSpan>(reading)
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <ItalicSpan>Dune </ItalicSpan>(reading)
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <ItalicSpan>Hunter x Hunter </ItalicSpan>(watching)
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <ItalicSpan>Dragon Ball Z </ItalicSpan>(watching)
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <ItalicSpan>Mass Effect 2 </ItalicSpan>(playing)
+                <a href='https://www.goodreads.com/book/show/36692414-a-new-city-o-s?from_search=true&from_srp=true&qid=sew0RzKabH&rank=1'>
+                  <ItalicSpan>A New City O/S</ItalicSpan>
+                </a>{' '}
+                by Stephen Goldsmith & Neil Kleiman
               </Paragraph>
             </li>
           </StyledUl>
-        </StyledSection>
+        </section>
       </Content>
       <Footer />
     </>

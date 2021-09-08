@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
 
 const NavText = styled.p`
   font-size: 0.75em;
-  padding: 0 0.5rem;
+  padding: 0 0.375rem;
   color: var(--subtleColor);
 `;
 
@@ -22,15 +22,23 @@ const Navbar = () => {
   return (
     <StyledNav>
       <NavText>
-        <Link to='/'> Home</Link>
+        <Link to='/'> home</Link>
       </NavText>
       <NavText>|</NavText>
       <NavText>
-        <Link to='/about'> About</Link>
+        <Link to='/about'> about</Link>
       </NavText>
       <NavText>|</NavText>
       <NavText>
-        <Link to='/curriculum-vitae'> CV</Link>
+        <Link to='/design'> design</Link>
+      </NavText>
+      <NavText>|</NavText>
+      <NavText>
+        <Link to='/development'> dev</Link>
+      </NavText>
+      <NavText>|</NavText>
+      <NavText>
+        <Link to='/curriculum-vitae'> cv</Link>
       </NavText>
     </StyledNav>
   );

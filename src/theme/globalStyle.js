@@ -128,13 +128,13 @@ table {
   border-spacing: 0;
 }
 
-// my styles
+// **************** MY STYLES ****************
 :root {
 --black: #1f1f1f;
 --white: #fff;
 // --subtleColor: #d2d2d2;
 --subtleColor: rgba(31, 31, 31, 0.8);
---accentColor: #ff3434;
+--accentColor: #fdcc57;
 }
 
 body {
@@ -185,6 +185,12 @@ h6 {
 p {
   font-size: 0.875em;
   line-height: 1.5;
+}
+
+.icon {
+  width: auto;
+  height: 50px;
+  margin: 10px;
 }
 `;
 

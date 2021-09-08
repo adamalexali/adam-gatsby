@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 // styles
 const StyledMain = styled.main`
-  // height: 100vh;
+  min-height: 100vh;
   padding: 1rem;
 `;
 

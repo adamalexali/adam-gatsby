@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Content from '../components/content';
 import Navbar from '../components/navbar';
@@ -153,7 +154,7 @@ const CurriculumVitae = () => {
           </div>
         </StyledSection>
 
-        <StyledSection>
+        <StyledSection id='experience'>
           <h2>Experience</h2>
           <StyledDiv>
             <StyledH3>
@@ -329,22 +330,26 @@ const CurriculumVitae = () => {
         <StyledSection>
           <h2>Tools & technologies</h2>
           <StyledDiv>
-            <StyledH3>Development</StyledH3>
-            <Paragraph>
-              HTML, CSS, JavaScript, Bootstrap, React, Node, Express, MongoDB,
-              Gatsby, Styled-Components, Git, Github, Webflow, Netlify, Unity 3D
-            </Paragraph>
-          </StyledDiv>
-          <div>
-            <StyledH3>Design</StyledH3>
+            <StyledH3>
+              <Link to='/design'>Design</Link>
+            </StyledH3>
             <Paragraph>
               Photoshop, Illustrator, XD, After Effects, InDesign, Aero, Figma,
               Sketch, InVision, Procreate, Blender, Cinema 4D
             </Paragraph>
+          </StyledDiv>
+          <div>
+            <StyledH3>
+              <Link to='/development'>Development</Link>
+            </StyledH3>
+            <Paragraph>
+              HTML, CSS, JavaScript, Bootstrap, React, Node, Express, MongoDB,
+              Gatsby, Styled-Components, Git, Github, Webflow, Netlify, Unity 3D
+            </Paragraph>
           </div>
         </StyledSection>
 
-        <StyledSection>
+        <section>
           <h2>Awards & recognition</h2>
           <StyledUl>
             <li>
@@ -371,7 +376,7 @@ const CurriculumVitae = () => {
               </Paragraph>
             </li>
           </StyledUl>
-        </StyledSection>
+        </section>
       </Content>
       <Footer />
     </>
