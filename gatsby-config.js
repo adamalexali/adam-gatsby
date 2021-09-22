@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src`,
       },
     },
     `gatsby-plugin-styled-components`,
@@ -27,6 +27,13 @@ module.exports = {
         theme_color: `#fdcc57`,
         display: `standalone`,
         icon: `src/images/icons-logo.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Inter\:700`, `Roboto\:400,400i,700,700i`],
+        display: 'swap',
       },
     },
   ],

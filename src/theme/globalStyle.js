@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 // import '../../public/static/reset.css';
 
 const GlobalStyle = createGlobalStyle`
-/* css reset */
 html,
 body,
 div,
@@ -132,64 +131,66 @@ table {
 :root {
 --black: #1f1f1f;
 --white: #fff;
-// --subtleColor: #d2d2d2;
+--light: #faf8f6;
+--links: #4a718a;
+--linksLighter: #6e8da1;
 --subtleColor: rgba(31, 31, 31, 0.8);
---accentColor: #fdcc57;
+--accentColor: #fdcf58;
 }
 
 body {
-  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  // font-family: -apple-system, Helvetica, Arial, sans-serif;
+  // font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 1rem auto;
   max-width: 768px;
-  // background-color: var(--black);
+  background-color: var(--light);
   color: var(--black);
   line-height: normal;
 }
 
 a {
   text-decoration-style: dotted;
-  color: var(--black);
+  color: var(--links);
 }
 
 a:active, a:hover {
-  color: var(--subtleColor);
+  color: var(--linksLighter);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 2em;
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 1.25em;
-  font-weight: 600;
+  font-size: 1.5em;
   margin-bottom: 1rem;
 }
 h3 {
-  font-size: 1.125em;
-  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 h4 {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.125em;
 }
-h5 {
-  font-size: 1em;
-  font-weight: 400;
-}
-h6 {
-  font-size: 1em;
-  font-weight: 500;
+h5, h6 {
+  font-size: 1.125em;
 }
 
 p {
-  font-size: 0.875em;
+  font-size: 1.063em;
   line-height: 1.5;
 }
 
 .icon {
   width: auto;
-  height: 50px;
+  height: 45px;
   margin: 10px;
 }
 `;

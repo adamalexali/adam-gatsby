@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
 import GlobalStyle from '../theme/globalStyle';
 import styled from 'styled-components';
 
