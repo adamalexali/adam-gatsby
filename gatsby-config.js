@@ -24,7 +24,7 @@ module.exports = {
         short_name: `Adam Ali`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#fdcc57`,
+        theme_color: `#4c4cf3`,
         display: `standalone`,
         icon: `src/images/icons-logo.svg`,
       },

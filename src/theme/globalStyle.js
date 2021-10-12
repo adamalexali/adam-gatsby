@@ -132,19 +132,18 @@ table {
 --black: #1f1f1f;
 --white: #fff;
 --light: #faf8f6;
---links: #4a718a;
---linksLighter: #6e8da1;
---subtleColor: rgba(31, 31, 31, 0.8);
+--links: #4c4cf3;
+--linksLighter: #6f6ff5;
+--linksVisited: #3535aa;
 --accentColor: #fdcf58;
 }
 
 body {
-  // font-family: -apple-system, Helvetica, Arial, sans-serif;
-  // font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto Mono', monospace;
   margin: 1rem auto;
   max-width: 768px;
-  background-color: var(--light);
+  // background-color: var(--light);
   color: var(--black);
   line-height: normal;
 }
@@ -154,13 +153,18 @@ a {
   color: var(--links);
 }
 
+// a:visited {
+//   color: var(--linksVisited);
+// }
+
 a:active, a:hover {
   color: var(--linksLighter);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+font-family: 'Roboto Slab', serif;
+// font-family: 'Roboto Mono', monospace;
+  font-weight: 800;
 }
 
 h1 {
@@ -177,19 +181,20 @@ h3 {
   margin-bottom: 0.5rem;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 h5, h6 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
 }
 
 p {
-  font-size: 1.063em;
+  // font-size: 1.063rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .icon {
-  width: auto;
+  // width: auto;
   height: 45px;
   margin: 10px;
 }

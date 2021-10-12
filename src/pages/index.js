@@ -88,17 +88,13 @@ const IndexPage = () => {
       >
         <section>
           <h1>
-            Hello!{' '}
-            <span role='img' aria-label='waving hand emoji'>
-              👋
-            </span>{' '}
+            Hello &#58;&#41;
             <br />
           </h1>
           <Paragraph>
             I'm{' '}
             <BoldSpan>
-              Adam Ali—a human-focused experience designer, developer, and
-              researcher
+              Adam—a human-focused UX developer, researcher, and techno-optimist
             </BoldSpan>{' '}
             exploring the intersections of people, design, and technology.
             Welcome to my little corner of the internet—a digital garden where I
@@ -108,9 +104,8 @@ const IndexPage = () => {
           </Paragraph>
           <Paragraph>
             I am particularly interested in user experience design,
-            human-machine interaction, digital accessibility, and the
-            relationship between tech & ethics. I write about these topics and
-            more in{' '}
+            human-machine interaction, web 3, and the relationship between tech
+            & ethics. I write about these topics and more in{' '}
             <a
               href='https://github.com/adamalexali/adam-obsidian'
               target='_blank'
@@ -121,10 +116,10 @@ const IndexPage = () => {
             .
           </Paragraph>
           <Paragraph>
-            Ultimately, I want to create more{' '}
-            <BoldSpan>accessible, inclusive, and open</BoldSpan> digital public
-            spaces—in whatever ways I can achieve that! I'm optimistic about the
-            future, and want to contribute my part to it.
+            Ultimately, I want to create more accessible, inclusive, and open
+            digital public spaces—in whatever ways I can achieve that! I'm
+            optimistic about the future, and want to contribute my part to
+            shaping it.
           </Paragraph>
           <Paragraph>
             Don't hesitate to reach out!{' '}
@@ -135,18 +130,10 @@ const IndexPage = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                download my CV
+                download my resume
               </a>
-            </BoldSpan>
-            , check out my{' '}
-            <a
-              href='https://www.github.com/adamalexali/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              GitHub
-            </a>
-            , or shoot me a message on{' '}
+            </BoldSpan>{' '}
+            or shoot me a message on{' '}
             <a
               href='https://twitter.com/adamalexali/'
               target='_blank'
@@ -162,7 +149,15 @@ const IndexPage = () => {
             >
               LinkedIn
             </a>
-            .
+            . Feel free to check out my{' '}
+            <a
+              href='https://www.github.com/adamalexali/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              GitHub
+            </a>{' '}
+            as well.
           </Paragraph>
         </section>
 
@@ -204,7 +199,7 @@ const IndexPage = () => {
                 </a>
               </Paragraph>
             </li>
-            <li>
+            {/* <li>
               <Paragraph>
                 <BoldSpan>Freelancing web development</BoldSpan>{' '}
                 <ItalicSpan>using</ItalicSpan>{' '}
@@ -212,7 +207,7 @@ const IndexPage = () => {
                   Webflow
                 </a>
               </Paragraph>
-            </li>
+            </li> */}
             <li>
               <Paragraph>
                 <BoldSpan>Building projects</BoldSpan>{' '}

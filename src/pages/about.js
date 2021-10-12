@@ -64,28 +64,21 @@ const AboutPage = () => {
           <h2>Reading…</h2>
           <Paragraph>
             I love starting my day reading—I try to do at least 30 mins and
-            contribute to my{' '}
-            <a
+            contribute to my notes
+            {/* <a
               href='https://github.com/adamalexali/adam-obsidian'
               target='_blank'
               rel='noreferrer'
             >
               second brain
-            </a>{' '}
-            everyday. I like to have a healthy mix of fiction and
-            non-fiction—let me know if you have a recommendation! Some of the
+            </a>{' '} */}{' '}
+            everyday. Let me know if you have a recommendation! Some of the
             things I'm reading or have read recently:
           </Paragraph>
           <StyledUl>
             <li>
               <Paragraph>
                 <BoldSpan>Weapons of Math Destruction</BoldSpan>—Cathy O'Neil
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <BoldSpan>Wherever You Go, There You Are</BoldSpan>—Jon
-                Kabat-Zinn
               </Paragraph>
             </li>
             <li>
@@ -101,17 +94,7 @@ const AboutPage = () => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Dune</BoldSpan>—Frank Herbert
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <BoldSpan>Naruto</BoldSpan>—Masashi Kishimoto
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <BoldSpan>One Piece</BoldSpan>—Eiichiro Oda
+                <BoldSpan>Blockchain Chicken Farm</BoldSpan>—Xiaowei Wang
               </Paragraph>
             </li>
           </StyledUl>
@@ -137,7 +120,7 @@ const AboutPage = () => {
           </Paragraph>
           <Paragraph>
             I also love hip-hop—some of my favourite artists include
-            BROCKHAMPTON, Travis Scott, JPEGMAFIA, and J. Cole to name a few.
+            BROCKHAMPTON, Travis Scott, Logic, and J. Cole to name a few.
           </Paragraph>
           <Paragraph>
             And of course I'll always have a love for old-school soul—my father
@@ -163,10 +146,10 @@ const AboutPage = () => {
               <Paragraph>Overwatch</Paragraph>
             </li>
             <li>
-              <Paragraph>Mass Effect 2</Paragraph>
+              <Paragraph>Death's Door</Paragraph>
             </li>
             <li>
-              <Paragraph>Final Fantasy VII Remake</Paragraph>
+              <Paragraph>Hollow Knight</Paragraph>
             </li>
           </StyledUl>
         </section>

@@ -20,13 +20,10 @@ const Footer = () => {
     <StyledFooter>
       <FooterText>
         Created with{' '}
-        <span role='img' aria-label='heart ASCII character'>
-          ♥
+        <span role='img' aria-label='unicode white heart suit'>
+          ♡
         </span>{' '}
-        by Adam using{' '}
-        <a href='https://www.gatsbyjs.com/' target='_blank' rel='noreferrer'>
-          Gatsby
-        </a>
+        by Adam
       </FooterText>
 
       <FooterText>
