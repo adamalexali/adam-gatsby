@@ -1,67 +1,13 @@
 import * as React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import styled from 'styled-components';
+import {
+  Paragraph,
+  StyledSection,
+  ItalicSpan,
+  BoldSpan,
+} from '../theme/styled-elements';
 import Content from '../components/content';
 import Footer from '../components/footer';
-
-//images
-import illustrator from '../images/icons-illustrator.svg';
-import aftereffects from '../images/icons-aftereffects.svg';
-import photoshop from '../images/icons-photoshop.svg';
-import indesign from '../images/icons-indesign.svg';
-import adobexd from '../images/icons-adobexd.svg';
-import figma from '../images/icons-figma.svg';
-import sketch from '../images/icons-sketch.svg';
-import zeplin from '../images/icons-zeplin.svg';
-import blender from '../images/icons-blender.svg';
-import c4d from '../images/icons-c4d.svg';
-
-import htmlIcon from '../images/icons-html.svg';
-import cssIcon from '../images/icons-css.svg';
-import js from '../images/icons-js.svg';
-import gitIcon from '../images/icons-git.svg';
-import githubIcon from '../images/icons-github.svg';
-import reactIcon from '../images/icons-react.svg';
-import nodeIcon from '../images/icons-node.svg';
-import webflow from '../images/icons-webflow.svg';
-
-const Paragraph = styled.p`
-  margin-bottom: 0.5rem;
-`;
-
-const StyledDiv = styled.div`
-  margin-bottom: 1.25rem;
-`;
-
-const StyledSection = styled.section`
-  margin: 2rem 0;
-`;
-
-const StyledUl = styled.ul`
-  list-style-type: disc;
-  // padding-left: 2.563rem;
-  padding-left: 1.375rem;
-`;
-
-const ItalicSpan = styled.span`
-  font-style: italic;
-`;
-
-const BoldSpan = styled.span`
-  font-weight: bold;
-`;
-
-const StyledGrid = styled.div`
-  // max-width: 500px;
-  // display: grid;
-  // margin: 0 auto;
-  // grid-template-columns: repeat(5, auto);
-  // place-items: center;
-  // grid-row-gap: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
 
 // markup
 const IndexPage = () => {
@@ -105,15 +51,8 @@ const IndexPage = () => {
           <Paragraph>
             I am particularly interested in user experience design,
             human-machine interaction, web 3, and the relationship between tech
-            & ethics. I write about these topics and more in{' '}
-            <a
-              href='https://github.com/adamalexali/adam-obsidian'
-              target='_blank'
-              rel='noreferrer'
-            >
-              my second brain
-            </a>
-            .
+            & ethics. I write about these topics and more in my{' '}
+            <Link to='/garden/hello-world'>second brain</Link>.
           </Paragraph>
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
@@ -179,7 +118,7 @@ const IndexPage = () => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Studying Digital Experience Design </BoldSpan>{' '}
+                <BoldSpan>Studying digital experience design </BoldSpan>{' '}
                 <ItalicSpan>at</ItalicSpan>{' '}
                 <a
                   href='https://www.georgebrown.ca/'
@@ -192,7 +131,7 @@ const IndexPage = () => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Studying Computer Science</BoldSpan>{' '}
+                <BoldSpan>Studying computer science</BoldSpan>{' '}
                 <ItalicSpan>at</ItalicSpan>{' '}
                 <a href='https://www.edx.org/' target='_blank' rel='noreferrer'>
                   edX
@@ -228,6 +167,38 @@ const IndexPage = () => {
                 <a href='https://medium.com/@adamalexali'>Medium</a>
               </Paragraph>
             </li> */}
+          </ul>
+        </StyledSection>
+
+        <StyledSection>
+          <h2>Previously…</h2>
+          <ul>
+            <li>
+              <Paragraph>
+                <BoldSpan>Studying interaction design</BoldSpan>{' '}
+                <ItalicSpan>at</ItalicSpan>{' '}
+                <a
+                  href='https://www.georgebrown.ca/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  George Brown College
+                </a>
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <BoldSpan>Exploring AR and ecommerce</BoldSpan>{' '}
+                <ItalicSpan>with</ItalicSpan>{' '}
+                <a
+                  href='https://www.georgebrown.ca/about/office-of-research-innovation'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  GBC Research & Innovation
+                </a>
+              </Paragraph>
+            </li>
           </ul>
         </StyledSection>
 
@@ -359,7 +330,7 @@ const IndexPage = () => {
             </StyledDiv>
           </div>
         </StyledSection> */}
-        <StyledSection>
+        {/* <StyledSection>
           <StyledDiv>
             <h2>Design…</h2>
             <Paragraph>
@@ -377,7 +348,7 @@ const IndexPage = () => {
             </Paragraph>
           </StyledDiv>
           <StyledDiv>
-            <h3>Specialities</h3>
+            <h3>Specialties</h3>
             <StyledUl>
               <li>
                 <Paragraph>
@@ -467,7 +438,7 @@ const IndexPage = () => {
             </Paragraph>
           </StyledDiv>
           <StyledDiv>
-            <h3>Specialities</h3>
+            <h3>Specialties</h3>
             <StyledUl>
               <li>
                 <Paragraph>
@@ -509,12 +480,6 @@ const IndexPage = () => {
               />
               <img className='icon' src={reactIcon} alt='React' title='React' />
               <img className='icon' src={nodeIcon} alt='Node' title='Node' />
-              {/* <img
-                className='icon'
-                src={mongodbIcon}
-                alt='MongoDB'
-                title='MongoDB'
-              /> */}
               <img
                 className='icon'
                 src={webflow}
@@ -523,7 +488,7 @@ const IndexPage = () => {
               />
             </StyledGrid>
           </StyledDiv>
-        </section>
+        </section> */}
       </Content>
       <Footer />
     </>

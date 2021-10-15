@@ -1,31 +1,13 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import {
+  Paragraph,
+  StyledSection,
+  StyledUl,
+  BoldSpan,
+} from '../theme/styled-elements';
 import Content from '../components/content';
 import Footer from '../components/footer';
-
-// styles
-
-const Paragraph = styled.p`
-  margin-bottom: 0.5rem;
-`;
-
-const StyledSection = styled.section`
-  margin: 2rem 0;
-`;
-
-const StyledUl = styled.ul`
-  list-style-type: disc;
-  padding-left: 1.375rem;
-`;
-
-const BoldSpan = styled.span`
-  font-weight: bold;
-`;
-
-const ItalicSpan = styled.span`
-  font-style: italic;
-`;
 
 const AboutPage = () => {
   return (

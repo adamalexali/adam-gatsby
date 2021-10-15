@@ -14,6 +14,20 @@ module.exports = {
         path: `${__dirname}/src`,
       },
     },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: 'Dark+ (default dark)',
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-image',
     `gatsby-plugin-sharp`,

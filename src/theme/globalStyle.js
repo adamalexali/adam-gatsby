@@ -16,18 +16,18 @@ h4,
 h5,
 h6,
 p,
-blockquote,
-pre,
+// blockquote,
+// pre,
 a,
 abbr,
 acronym,
 address,
 big,
 cite,
-code,
+// code,
 del,
 dfn,
-em,
+// em,
 img,
 ins,
 kbd,
@@ -35,8 +35,8 @@ q,
 s,
 samp,
 small,
-strike,
-strong,
+// strike,
+// strong,
 sub,
 sup,
 tt,
@@ -80,7 +80,7 @@ ruby,
 section,
 summary,
 time,
-mark,
+// mark,
 audio,
 video {
   margin: 0;
@@ -107,21 +107,21 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
+// ol,
+// ul {
+//   list-style: none;
+// }
+// blockquote,
+// q {
+//   quotes: none;
+// }
+// blockquote:before,
+// blockquote:after,
+// q:before,
+// q:after {
+//   content: '';
+//   content: none;
+// }
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -197,6 +197,21 @@ p {
   // width: auto;
   height: 45px;
   margin: 10px;
+}
+
+ul, ol {
+  padding-left: 1.375rem;
+}
+
+blockquote {
+  border-left: 2px solid var(--black);
+  padding-left: 1rem;
+}
+
+// **************** Markdown Posts ****************
+
+.post-content p {
+  margin-bottom: 0.5rem;
 }
 `;
 

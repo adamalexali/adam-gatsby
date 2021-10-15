@@ -1,18 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components';
-
-// styles
-const StyledFooter = styled.footer`
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const FooterText = styled.p`
-  font-size: 0.875rem;
-`;
+import { StyledFooter, FooterText } from '../theme/styled-elements';
 
 // component
 const Footer = () => {
