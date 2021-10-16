@@ -87,7 +87,8 @@ const AboutPage = () => {
           <Paragraph>
             Recently, I've wanted to get more into writing more formally. I am
             working on a few articles currently, and I hope to continue writing
-            in my digital garden. Stay tuned!
+            in my <Link to='/garden/hello-world'>digital garden</Link>. Stay
+            tuned!
           </Paragraph>
         </StyledSection>
 
