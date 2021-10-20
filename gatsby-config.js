@@ -1,4 +1,5 @@
 module.exports = {
+  // pathPrefix: '/blog',
   siteMetadata: {
     title: 'Adam Ali—Experience designer, developer, & researcher',
     siteURL: 'https://adamalexali.com',
@@ -38,9 +39,9 @@ module.exports = {
         short_name: `Adam Ali`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#4c4cf3`,
+        // theme_color: `#BDDDF4`,
         display: `standalone`,
-        icon: `src/images/icons-logo.svg`,
+        icon: `src/images/gem-stone.svg`,
       },
     },
     {
@@ -48,6 +49,39 @@ module.exports = {
       options: {
         fonts: [`Inter\:700`, `Roboto\:400,400i,700,700i`],
         display: 'swap',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        // useAutoGen: required 'true' to use autogen
+        useAutoGen: true,
+        // autoGenHomeLabel: optional 'Home' is default
+        autoGenHomeLabel: `home`,
+        // exclude: optional, include this array to exclude paths you don't want to
+        // generate breadcrumbs for (see below for details).
+        exclude: [
+          `**/dev-404-page/**`,
+          `**/404/**`,
+          `**/404.html`,
+          `**/offline-plugin-app-shell-fallback/**`,
+        ],
+        // isMatchOptions: optional, include this object to configure the wildcard-match library.
+        excludeOptions: {
+          separator: '.',
+        },
+        // crumbLabelUpdates: optional, update specific crumbLabels in the path
+        crumbLabelUpdates: [
+          {
+            // pathname: 'garden/hello-world',
+            // crumbLabel: 'hello-world',
+          },
+        ],
+        // trailingSlashes: optional, will add trailing slashes to the end
+        // of crumb pathnames. default is false
+        trailingSlashes: false,
+        // usePathPrefix: optional, if you are using pathPrefix above
+        // usePathPrefix: '/blog',
       },
     },
   ],

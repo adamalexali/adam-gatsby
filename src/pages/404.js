@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Content from '../components/content';
-import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 // styles
@@ -18,7 +17,6 @@ const Paragraph = styled.p`
 const NotFoundPage = () => {
   return (
     <>
-      <Navbar />
       <Content
         pageMeta={{
           title: '404',

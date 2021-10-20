@@ -6,10 +6,17 @@ import {
   StyledUl,
   BoldSpan,
 } from '../theme/styled-elements';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Content from '../components/content';
 import Footer from '../components/footer';
 
-const AboutPage = () => {
+const AboutPage = ({ pageContext, location }) => {
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
+  const customCrumbLabel = location.pathname.toLowerCase().replace('/', ' ');
+
   return (
     <>
       <Content
@@ -22,11 +29,15 @@ const AboutPage = () => {
       >
         <section>
           <Paragraph>
-            <Link to='/'>/index</Link>
+            <Breadcrumb
+              crumbs={crumbs}
+              crumbSeparator=' / '
+              crumbLabel={customCrumbLabel}
+            />
           </Paragraph>
         </section>
 
-        <StyledSection>
+        <section>
           <h1>About me</h1>
           <Paragraph>
             It's always nice to know a little bit more about each other—I'm
@@ -40,7 +51,7 @@ const AboutPage = () => {
           Consider reaching out using the form below, and we can connect, chat,
           & collaborate!
         </Paragraph> */}
-        </StyledSection>
+        </section>
 
         <StyledSection>
           <h2>Reading…</h2>
@@ -87,8 +98,7 @@ const AboutPage = () => {
           <Paragraph>
             Recently, I've wanted to get more into writing more formally. I am
             working on a few articles currently, and I hope to continue writing
-            in my <Link to='/garden/hello-world'>digital garden</Link>. Stay
-            tuned!
+            in my <Link to='/garden'>digital garden</Link>. Stay tuned!
           </Paragraph>
         </StyledSection>
 

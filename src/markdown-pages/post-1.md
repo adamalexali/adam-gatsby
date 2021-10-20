@@ -1,5 +1,5 @@
 ---
-slug: '/garden/hello-world'
+slug: '/hello-world'
 date: '2021-10-14'
 title: 'Hello world'
 ---

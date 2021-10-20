@@ -1,20 +1,28 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import Content from '../components/content';
-import Footer from '../components/footer';
-import {
-  p,
-  StyledSection,
-  StyledUl,
-  ItalicSpan,
-  BoldSpan,
-} from '../theme/styled-elements';
+import Content from '../../components/content';
+import Footer from '../../components/footer';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+import { Paragraph, StyledSection } from '../../theme/styled-elements';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  pageContext,
+  location,
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
+  const thePath = location.pathname;
+  const getLastItem = (thePath) =>
+    thePath.substring(thePath.lastIndexOf('/') + 1);
+
+  const customCrumbLabel = getLastItem(thePath).toLowerCase().replace('/', ' ');
+
   return (
     <>
       <Content
@@ -22,13 +30,17 @@ export default function Template({
           title: `${frontmatter.title} |`,
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
-            'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
+            'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
         }}
       >
         <section>
-          <p>
-            <Link to='/'>/index</Link>
-          </p>
+          <Paragraph>
+            <Breadcrumb
+              crumbs={crumbs}
+              crumbSeparator=' / '
+              crumbLabel={customCrumbLabel}
+            />
+          </Paragraph>
         </section>
 
         <StyledSection>

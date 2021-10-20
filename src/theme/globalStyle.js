@@ -132,17 +132,27 @@ table {
 --black: #1f1f1f;
 --white: #fff;
 --light: #faf8f6;
---links: #4c4cf3;
---linksLighter: #6f6ff5;
---linksVisited: #3535aa;
+// --links: #4c4cf3;
+// --linksLighter: #6f6ff5;
+// --linksVisited: #3535aa;
 --accentColor: #fdcf58;
 }
 
+.breadcrumb__list {
+  list-style: none;
+  padding: 0;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb__list > li {
+  display: inline;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  // font-family: 'Roboto Mono', monospace;
+  font-family: -apple-system,BlinkMacSystemFont,helvetica neue,helvetica, sans-serif;
   margin: 1rem auto;
-  max-width: 768px;
+  max-width: 668px;
   // background-color: var(--light);
   color: var(--black);
   line-height: normal;
@@ -150,21 +160,29 @@ body {
 
 a {
   text-decoration-style: dotted;
-  color: var(--links);
+  // color: var(--links);
 }
 
 // a:visited {
 //   color: var(--linksVisited);
 // }
 
-a:active, a:hover {
-  color: var(--linksLighter);
+// a:active, a:hover {
+//   color: var(--linksLighter);
+// }
+
+a[target="_blank"]::after {
+    margin-left: 0.125em;
+    margin-right: 0.25em;
+    display: inline;
+    content: "↗";
+    font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Roboto Slab', serif;
+// font-family: 'Roboto Slab', serif;
 // font-family: 'Roboto Mono', monospace;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h1 {
