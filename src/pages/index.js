@@ -28,7 +28,7 @@ const IndexPage = ({ pageContext, location }) => {
     breadcrumb: { crumbs },
   } = pageContext;
 
-  const customCrumbLabel = location.pathname.toLowerCase().replace('/', ' ');
+  // const customCrumbLabel = location.pathname.toLowerCase().replace('/', ' ');
 
   return (
     <>
@@ -72,7 +72,7 @@ const IndexPage = ({ pageContext, location }) => {
             I am particularly interested in user experience design,
             human-machine interaction, web 3.0, and the relationship between
             tech &amp; ethics. I write about these topics and more in my{' '}
-            <Link to='/garden/hello-world'>digital garden</Link>.
+            <Link to='/garden'>digital garden</Link>.
           </Paragraph>
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
