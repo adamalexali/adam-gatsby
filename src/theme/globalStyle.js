@@ -150,7 +150,7 @@ table {
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,helvetica neue,helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica neue, Helvetica, sans-serif;
   margin: 1rem auto;
   max-width: 668px;
   // background-color: var(--light);

@@ -24,7 +24,7 @@ const Garden = ({ pageContext, location }) => {
           title: 'Garden |',
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
-            'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
+            'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
         }}
       >
         <section>
@@ -44,7 +44,7 @@ const Garden = ({ pageContext, location }) => {
             &amp; design) in a semi-comprehensible way.
           </Paragraph>
           <Paragraph>
-            Coming soon. For now…{' '}
+            Coming soon. But for now…{' '}
             <Link to='/garden/hello-world'>stay tuned</Link>!
           </Paragraph>
         </section>

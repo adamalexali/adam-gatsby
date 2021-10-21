@@ -51,16 +51,16 @@ const IndexPage = ({ pageContext, location }) => {
 
         <section>
           <h1>
-            Hello!{' '}
             <span role='img' aria-label='gem stone emoji'>
               💎
             </span>{' '}
-            <br />
+            Hello!
           </h1>
           <Paragraph>
             I'm{' '}
             <BoldSpan>
-              Adam—a human-focused UX developer, researcher, and techno-optimist
+              Adam—a human-centered UX developer, researcher, and
+              techno-optimist
             </BoldSpan>{' '}
             exploring the intersections of people, design, and technology.
             Welcome to my little corner of the internet—a digital garden where I
@@ -72,13 +72,13 @@ const IndexPage = ({ pageContext, location }) => {
             I am particularly interested in user experience design,
             human-machine interaction, web 3.0, and the relationship between
             tech &amp; ethics. I write about these topics and more in my{' '}
-            <Link to='/garden'>digital garden</Link>.
+            <Link to='/garden/hello-world'>digital garden</Link>.
           </Paragraph>
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
             digital public spaces—in whatever ways I can achieve that! I'm
-            optimistic about the future, and want to contribute my part to
-            shaping it.
+            excited about the future, and want to contribute my part to shaping
+            it.
           </Paragraph>
           <Paragraph>
             Don't hesitate to reach out!{' '}
@@ -125,7 +125,9 @@ const IndexPage = ({ pageContext, location }) => {
           <ul>
             <li>
               <Paragraph>
-                <BoldSpan>Exploring digital accessibility</BoldSpan>{' '}
+                <BoldSpan>
+                  Exploring digital accessibility for learning
+                </BoldSpan>{' '}
                 <ItalicSpan>with</ItalicSpan>{' '}
                 <a
                   href='https://www.georgebrown.ca/about/office-of-research-innovation'
@@ -208,7 +210,7 @@ const IndexPage = ({ pageContext, location }) => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Exploring AR and ecommerce</BoldSpan>{' '}
+                <BoldSpan>Exploring AR &amp; ecommerce</BoldSpan>{' '}
                 <ItalicSpan>with</ItalicSpan>{' '}
                 <a
                   href='https://www.georgebrown.ca/about/office-of-research-innovation'

@@ -43,14 +43,14 @@ export default function Template({
           </Paragraph>
         </section>
 
-        <StyledSection>
+        <section>
           <h1>{frontmatter.title}</h1>
           {/* <h6>{frontmatter.date}</h6> */}
           <div
             className='post-content'
             dangerouslySetInnerHTML={{ __html: html }}
           />
-        </StyledSection>
+        </section>
       </Content>
       <Footer />
     </>

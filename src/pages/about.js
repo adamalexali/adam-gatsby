@@ -24,7 +24,7 @@ const AboutPage = ({ pageContext, location }) => {
           title: 'About |',
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
-            'Adam Ali is a multidisciplinary experience designer exploring the intersections of people, design, and technology.',
+            'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
         }}
       >
         <section>
@@ -41,8 +41,8 @@ const AboutPage = ({ pageContext, location }) => {
           <h1>About me</h1>
           <Paragraph>
             It's always nice to know a little bit more about each other—I'm
-            grateful you are taking the time to find out more & I would love to
-            hear from you!
+            grateful you are taking the time to find out more &amp; I would love
+            to hear from you!
           </Paragraph>
           <Paragraph>
             Below are a few of the things I've been engaging with lately.
@@ -81,7 +81,7 @@ const AboutPage = ({ pageContext, location }) => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>A New City O/S</BoldSpan>—Stephen Goldsmith & Neil
+                <BoldSpan>A New City O/S</BoldSpan>—Stephen Goldsmith &amp; Neil
                 Kleiman
               </Paragraph>
             </li>
@@ -118,7 +118,7 @@ const AboutPage = ({ pageContext, location }) => {
           <Paragraph>
             And of course I'll always have a love for old-school soul—my father
             would often play artists like Marvin Gaye, The Supremes, Jackson 5,
-            and Earth, Wind & Fire for my sister and I when we were young…
+            and Earth, Wind &amp; Fire for my sister and I when we were young…
             memories!
           </Paragraph>
         </StyledSection>
