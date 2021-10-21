@@ -1,9 +1,9 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Content from '../../components/content';
 import Footer from '../../components/footer';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
-import { Paragraph, StyledSection } from '../../theme/styled-elements';
+import { Paragraph } from '../../theme/styled-elements';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
