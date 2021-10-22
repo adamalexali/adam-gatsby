@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Paragraph } from '../../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Content from '../../components/content';
 import Footer from '../../components/footer';
 
-const Garden = ({ pageContext, location }) => {
+const Garden = ({ data, pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
@@ -16,7 +16,7 @@ const Garden = ({ pageContext, location }) => {
     <>
       <Content
         pageMeta={{
-          title: 'Garden |',
+          title: `Garden |`,
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
@@ -40,7 +40,7 @@ const Garden = ({ pageContext, location }) => {
           </Paragraph>
           <Paragraph>
             Coming soon. But for now…{' '}
-            <Link to='/garden/hello-world'>stay tuned</Link>!
+            <Link to='/garden/hello-world'>stay tuned!</Link>
           </Paragraph>
         </section>
       </Content>
@@ -48,5 +48,21 @@ const Garden = ({ pageContext, location }) => {
     </>
   );
 };
+
+export const query = graphql`
+  query {
+    allMdx {
+      nodes {
+        frontmatter {
+          date
+          title
+          slug
+        }
+        id
+        body
+      }
+    }
+  }
+`;
 
 export default Garden;

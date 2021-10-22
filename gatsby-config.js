@@ -15,15 +15,21 @@ module.exports = {
         path: `${__dirname}/src`,
       },
     },
-    `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        plugins: [
+        name: `thoughts`,
+        path: `${__dirname}/thoughts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-vscode`,
             options: {
-              theme: 'Dark+ (default dark)',
+              theme: 'Dark+ (default dark)', // Or install your favorite theme from GitHub
             },
           },
         ],
@@ -71,12 +77,7 @@ module.exports = {
           separator: '.',
         },
         // crumbLabelUpdates: optional, update specific crumbLabels in the path
-        crumbLabelUpdates: [
-          {
-            // pathname: 'garden/hello-world',
-            // crumbLabel: 'hello-world',
-          },
-        ],
+        crumbLabelUpdates: [{}],
         // trailingSlashes: optional, will add trailing slashes to the end
         // of crumb pathnames. default is false
         trailingSlashes: false,

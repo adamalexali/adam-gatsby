@@ -1,18 +1,23 @@
-import React from 'react';
+import * as React from 'react';
 import { graphql } from 'gatsby';
+import { Paragraph } from '../../theme/styled-elements';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Content from '../../components/content';
 import Footer from '../../components/footer';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
-import { Paragraph } from '../../theme/styled-elements';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import styled from 'styled-components';
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-  pageContext,
-  location,
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
+const MarkdownWrapper = styled.div`
+  p {
+    margin-bottom: 0.5rem;
+  }
 
+  div {
+    margin-bottom: 1.25rem;
+  }
+`;
+
+const GardenPost = ({ data, pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
@@ -27,7 +32,7 @@ export default function Template({
     <>
       <Content
         pageMeta={{
-          title: `${frontmatter.title} |`,
+          title: `${data.mdx.frontmatter.title} |`,
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
@@ -44,27 +49,26 @@ export default function Template({
         </section>
 
         <section>
-          <h1>{frontmatter.title}</h1>
-          {/* <h6>{frontmatter.date}</h6> */}
-          <div
-            className='post-content'
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <h1>{data.mdx.frontmatter.title}</h1>
+          <MarkdownWrapper>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </MarkdownWrapper>
         </section>
       </Content>
       <Footer />
     </>
   );
-}
-export const pageQuery = graphql`
-  query ($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+};
+
+export const query = graphql`
+  query ($id: String) {
+    mdx(id: { eq: $id }) {
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
         title
       }
+      body
     }
   }
 `;
+
+export default GardenPost;
