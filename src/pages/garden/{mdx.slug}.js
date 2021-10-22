@@ -1,22 +1,38 @@
 import * as React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Paragraph } from '../../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Content from '../../components/content';
 import Footer from '../../components/footer';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import styled from 'styled-components';
 
-const Garden = ({ data, pageContext, location }) => {
+const MarkdownWrapper = styled.div`
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  div {
+    margin-bottom: 1.25rem;
+  }
+`;
+
+const GardenPost = ({ data, pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
 
-  const customCrumbLabel = location.pathname.toLowerCase().replace('/', ' ');
+  const thePath = location.pathname;
+  const getLastItem = (thePath) =>
+    thePath.substring(thePath.lastIndexOf('/') + 1);
+
+  const customCrumbLabel = getLastItem(thePath).toLowerCase().replace('/', ' ');
 
   return (
     <>
       <Content
         pageMeta={{
-          title: `Garden |`,
+          title: `${data.mdx.frontmatter.title} |`,
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
@@ -33,15 +49,10 @@ const Garden = ({ data, pageContext, location }) => {
         </section>
 
         <section>
-          <h1>Garden</h1>
-          <Paragraph>
-            Here is where I cultivate thoughts I've had (mostly related to tech
-            &amp; design) in a semi-comprehensible way.
-          </Paragraph>
-          <Paragraph>
-            Coming soon. But for now…{' '}
-            <Link to='/garden/hello-world'>stay tuned!</Link>
-          </Paragraph>
+          <h1>{data.mdx.frontmatter.title}</h1>
+          <MarkdownWrapper>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </MarkdownWrapper>
         </section>
       </Content>
       <Footer />
@@ -50,19 +61,14 @@ const Garden = ({ data, pageContext, location }) => {
 };
 
 export const query = graphql`
-  query {
-    allMdx {
-      nodes {
-        frontmatter {
-          date
-          title
-          slug
-        }
-        id
-        body
+  query ($id: String) {
+    mdx(id: { eq: $id }) {
+      frontmatter {
+        title
       }
+      body
     }
   }
 `;
 
-export default Garden;
+export default GardenPost;

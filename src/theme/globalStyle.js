@@ -132,9 +132,9 @@ table {
 --black: #1f1f1f;
 --white: #fff;
 --light: #faf8f6;
-// --links: #4c4cf3;
-// --linksLighter: #6f6ff5;
-// --linksVisited: #3535aa;
+--links: RoyalBlue;
+--linksLighter: #7a96ea;
+--linksVisited: DarkBlue;
 --accentColor: #fdcf58;
 }
 
@@ -160,16 +160,16 @@ body {
 
 a {
   text-decoration-style: dotted;
-  // color: var(--links);
+  color: var(--links);
 }
 
 // a:visited {
 //   color: var(--linksVisited);
 // }
 
-// a:active, a:hover {
-//   color: var(--linksLighter);
-// }
+a:active, a:hover {
+  color: var(--linksLighter);
+}
 
 a[target="_blank"]::after {
     margin-left: 0.125em;
@@ -180,8 +180,6 @@ a[target="_blank"]::after {
 }
 
 h1, h2, h3, h4, h5, h6 {
-// font-family: 'Roboto Slab', serif;
-// font-family: 'Roboto Mono', monospace;
   font-weight: 700;
 }
 
