@@ -7,6 +7,7 @@ import {
   ItalicSpan,
   BoldSpan,
 } from '../theme/styled-elements';
+import ThemeToggle from '../components/themeToggle';
 import Content from '../components/content';
 import Footer from '../components/footer';
 
@@ -39,6 +40,8 @@ const IndexPage = ({ pageContext, location }) => {
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
         }}
       >
+        <ThemeToggle />
+
         <section>
           <Paragraph>
             <Breadcrumb

@@ -78,5 +78,6 @@ module.exports = {
         // usePathPrefix: '/blog',
       },
     },
+    'gatsby-plugin-dark-mode',
   ],
 };
