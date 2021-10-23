@@ -133,10 +133,10 @@ table {
   --white: #fff;
   --off-white: #f2f2f2;
   --light: #faf8f6;
-  --lightLinks: RoyalBlue;
-  --lightLinksActive: #7a96ea;
-  --darkLinks: #fdcf58;
-  --lightLinksActive: #fdcf58;
+  --lightLinks: #0037ff;
+  --lightLinksActive: #4166f5;
+  --darkLinks: #87cefa;
+  --darkLinksActive: #87ceff;
 }
 
 /* **************** LIGHTMODE ****************  */
@@ -146,13 +146,11 @@ body.light {
 }
 
 body.light a {
-  text-decoration-style: dotted;
   color: var(--lightLinks);
 }
 
-body.light a:active,
-a:hover {
-  color: var(--lightLinksActive);
+body.light a:active, body.light a:hover {
+  // color: var(--lightLinksActive);
 }
 
 /* **************** DARKMODE **************** */
@@ -162,13 +160,11 @@ body.dark {
 }
 
 body.dark a {
-  text-decoration-style: dotted;
   color: var(--darkLinks);
 }
 
-body.dark a:active,
-a:hover {
-  color: var(--darkLinksActive);
+body.dark a:active, body.dark a:hover  {
+  // color: var(---darkLinksActive);
 }
 
 /* **************** BREADCRUMBS **************** */
@@ -190,6 +186,10 @@ body {
   margin: 1rem auto;
   max-width: 668px;
   line-height: normal;
+}
+
+a {
+  text-decoration-style: dotted;
 }
 
 a[target='_blank']::after {
