@@ -51,13 +51,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Inter\:700`, `Roboto\:400,400i,700,700i`],
-        display: 'swap',
-      },
-    },
-    {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
         // useAutoGen: required 'true' to use autogen
