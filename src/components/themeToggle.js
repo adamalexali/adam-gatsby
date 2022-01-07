@@ -1,18 +1,23 @@
 import * as React from 'react';
 import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 const ThemeToggle = ({ pageContext, location }) => {
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
-        <label>
-          <input
-            type='checkbox'
-            onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
-            checked={theme === 'dark'}
-          />{' '}
-          Dark mode
-        </label>
+        <button
+          id='themeToggleBtn'
+          onClick={(e) =>
+            theme === 'light' ? toggleTheme('dark') : toggleTheme('light')
+          }
+        >
+          {theme === 'light' ? (
+            <FiSun style={{ color: 'var(--black)' }} />
+          ) : (
+            <FiMoon style={{ color: 'var(--white)' }} />
+          )}
+        </button>
       )}
     </ThemeToggler>
   );

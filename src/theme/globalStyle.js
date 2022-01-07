@@ -133,10 +133,18 @@ table {
   --white: #fff;
   --off-white: #f2f2f2;
   --light: #faf8f6;
-  --lightLinks: #0037ff;
-  --lightLinksActive: #4166f5;
-  --darkLinks: #87cefa;
-  --darkLinksActive: #87ceff;
+  --lightLinks: #0000ff;
+  --lightLinksActive: #3232ff;
+  --darkLinks: #ff7324;
+  --darkLinksActive: #ff8f4f;
+}
+
+#themeToggleBtn {
+background-color: transparent;
+border: none;
+text-align: center;
+font-size: 2rem;
+cursor: pointer;
 }
 
 /* **************** LIGHTMODE ****************  */
@@ -150,7 +158,7 @@ body.light a {
 }
 
 body.light a:active, body.light a:hover {
-  // color: var(--lightLinksActive);
+  color: var(--lightLinksActive);
 }
 
 /* **************** DARKMODE **************** */
@@ -164,7 +172,7 @@ body.dark a {
 }
 
 body.dark a:active, body.dark a:hover  {
-  // color: var(---darkLinksActive);
+  color: var(--darkLinksActive);
 }
 
 /* **************** BREADCRUMBS **************** */
@@ -172,7 +180,7 @@ body.dark a:active, body.dark a:hover  {
   list-style: none;
   padding: 0;
   text-transform: lowercase;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
 }
 
 .breadcrumb__list > li {
@@ -244,7 +252,7 @@ p {
 
 ul,
 ol {
-  padding-left: 1.375rem;
+  // padding-left: 1.375rem;
 }
 
 blockquote {

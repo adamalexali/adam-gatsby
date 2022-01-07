@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const StyledNav = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+
 export const StyledMain = styled.main`
   min-height: 100vh;
   padding: 1rem;

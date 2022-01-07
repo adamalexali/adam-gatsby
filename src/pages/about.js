@@ -3,10 +3,12 @@ import { Link } from 'gatsby';
 import {
   Paragraph,
   StyledSection,
+  StyledNav,
   StyledUl,
   BoldSpan,
 } from '../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+import ThemeToggle from '../components/themeToggle';
 import Content from '../components/content';
 import Footer from '../components/footer';
 
@@ -27,15 +29,16 @@ const AboutPage = ({ pageContext, location }) => {
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
         }}
       >
-        <section>
-          <Paragraph>
+        <StyledNav>
+          <p>
             <Breadcrumb
               crumbs={crumbs}
               crumbSeparator=' / '
               crumbLabel={customCrumbLabel}
             />
-          </Paragraph>
-        </section>
+          </p>
+          <ThemeToggle />
+        </StyledNav>
 
         <section>
           <h1>About me</h1>
@@ -43,6 +46,12 @@ const AboutPage = ({ pageContext, location }) => {
             It's always nice to know a little bit more about each other—I'm
             grateful you are taking the time to find out more &amp; I would love
             to hear from you!
+          </Paragraph>
+          <Paragraph>
+            I am currently a student at George Brown College, completing a
+            Honours Bachelor of Design, specifically focusing on Digital
+            Experience Design. Before that, I studied and received an Advanced
+            Diploma in Interaction Design.
           </Paragraph>
           <Paragraph>
             Below are a few of the things I've been engaging with lately.
@@ -57,69 +66,34 @@ const AboutPage = ({ pageContext, location }) => {
           <h2>Reading…</h2>
           <Paragraph>
             I love starting my day reading—I try to do at least 30 mins and
-            contribute to my notes
-            {/* <a
+            contribute to my{' '}
+            <a
               href='https://github.com/adamalexali/adam-obsidian'
               target='_blank'
               rel='noreferrer'
             >
-              second brain
-            </a>{' '} */}{' '}
-            everyday. Let me know if you have a recommendation! Some of the
-            things I'm reading or have read recently:
+              notes
+            </a>{' '}
+            everyday. Let me know if you have a recommendation!
           </Paragraph>
-          <StyledUl>
-            <li>
-              <Paragraph>
-                <BoldSpan>Weapons of Math Destruction</BoldSpan>—Cathy O'Neil
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <BoldSpan>Your Money or Your Life</BoldSpan>—Vicki Robin
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <BoldSpan>A New City O/S</BoldSpan>—Stephen Goldsmith &amp; Neil
-                Kleiman
-              </Paragraph>
-            </li>
-            <li>
-              <Paragraph>
-                <BoldSpan>Blockchain Chicken Farm</BoldSpan>—Xiaowei Wang
-              </Paragraph>
-            </li>
-          </StyledUl>
         </StyledSection>
 
         <StyledSection>
           <h2>Writing…</h2>
           <Paragraph>
             Recently, I've wanted to get more into writing more formally. I am
-            working on a few articles currently, and I hope to continue writing
-            in my <Link to='/garden'>digital garden</Link>. Stay tuned!
+            working on a few articles currently… stay tuned.
           </Paragraph>
         </StyledSection>
 
         <StyledSection>
           <h2>Listening…</h2>
           <Paragraph>
-            Many people are surprised in my taste in music. I actually really
-            like a lot of diverse types of sound—but my favourite has to be
-            metal (I won't get pedantic about the subgenres). Nothing gets me
-            into a flow state like listening to Intervals, Erra, Veil of Maya,
-            or (more recently) Spiritbox.
+            I really like a lot of diverse types of music, but my favourite has
+            to be metal (I won't get pedantic about the subgenres).
           </Paragraph>
           <Paragraph>
-            I also love hip-hop—some of my favourite artists include
-            BROCKHAMPTON, Travis Scott, Logic, and J. Cole to name a few.
-          </Paragraph>
-          <Paragraph>
-            And of course I'll always have a love for old-school soul—my father
-            would often play artists like Marvin Gaye, The Supremes, Jackson 5,
-            and Earth, Wind &amp; Fire for my sister and I when we were young…
-            memories!
+            Hip hop and old-school soul are both up there as well.
           </Paragraph>
         </StyledSection>
 
@@ -136,13 +110,10 @@ const AboutPage = ({ pageContext, location }) => {
               <Paragraph>Valorant</Paragraph>
             </li>
             <li>
-              <Paragraph>Overwatch</Paragraph>
+              <Paragraph>Halo Infinite</Paragraph>
             </li>
             <li>
-              <Paragraph>Death's Door</Paragraph>
-            </li>
-            <li>
-              <Paragraph>Hollow Knight</Paragraph>
+              <Paragraph>Pillars of Eternity</Paragraph>
             </li>
           </StyledUl>
         </section>

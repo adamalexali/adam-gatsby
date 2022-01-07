@@ -4,6 +4,7 @@ import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import {
   Paragraph,
   StyledSection,
+  StyledNav,
   ItalicSpan,
   BoldSpan,
 } from '../theme/styled-elements';
@@ -40,46 +41,55 @@ const IndexPage = ({ pageContext, location }) => {
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
         }}
       >
-        <ThemeToggle />
-
-        <section>
-          <Paragraph>
+        <StyledNav>
+          <p>
             <Breadcrumb
               crumbs={crumbs}
               crumbSeparator=' / '
               crumbLabel='home'
             />
-          </Paragraph>
-        </section>
+          </p>
+          <ThemeToggle />
+        </StyledNav>
 
         <section>
           <h1>
-            <span role='img' aria-label='gem stone emoji'>
-              💎
+            <span role='img' aria-label='waving hand emoji'>
+              👋
             </span>{' '}
             Hello!
           </h1>
           <Paragraph>
             I'm{' '}
             <BoldSpan>
-              Adam—a human-centered UX developer, researcher, and
-              techno-optimist
+              Adam—a human-centered UX developer, researcher, and technologist
             </BoldSpan>{' '}
-            exploring the intersections of people, design, and technology.
-            Welcome to my little corner of the internet—a digital garden where I
-            share my thoughts and what I'm working on. If you'd like, you can
-            also <Link to='/about'>find out more about me</Link>, and what I am
-            up to when I'm not working!
+            equipped with an interdisciplinary foundation in digital
+            experience—including UX, HCI, web development, systems design, and
+            service design.
+          </Paragraph>
+          <Paragraph>
+            Welcome to my little corner of the internet, where I share my
+            thoughts &amp; what I'm working on. If you'd like, you can also{' '}
+            <Link to='/about'>find out more about me</Link>, and what I am up to
+            when I'm not working!
           </Paragraph>
           <Paragraph>
             I am particularly interested in user experience design,
             human-machine interaction, web 3.0, and the relationship between
             tech &amp; ethics. I write about these topics and more in my{' '}
-            <Link to='/garden'>digital garden</Link>.
+            <a
+              href='https://github.com/adamalexali/adam-obsidian'
+              target='_blank'
+              rel='noreferrer'
+            >
+              digital garden
+            </a>
+            .
           </Paragraph>
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
-            digital public spaces—in whatever ways I can achieve that! I'm
+            digital public spaces—in whatever ways I can achieve that. I'm
             excited about the future, and want to contribute my part to shaping
             it.
           </Paragraph>
@@ -128,54 +138,26 @@ const IndexPage = ({ pageContext, location }) => {
           <ul>
             <li>
               <Paragraph>
-                <BoldSpan>
-                  Exploring digital accessibility for learning
-                </BoldSpan>{' '}
-                <ItalicSpan>with</ItalicSpan>{' '}
-                <a
-                  href='https://www.georgebrown.ca/about/office-of-research-innovation'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  GBC Research &amp; Innovation
-                </a>
+                <BoldSpan>Looking for a job</BoldSpan>{' '}
+                <ItalicSpan>in</ItalicSpan> UX and/or development fields
               </Paragraph>
             </li>
             <li>
               <Paragraph>
                 <BoldSpan>Studying digital experience design </BoldSpan>{' '}
-                <ItalicSpan>at</ItalicSpan>{' '}
-                <a
-                  href='https://www.georgebrown.ca/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  George Brown College
-                </a>
+                <ItalicSpan>at</ItalicSpan> George Brown College
               </Paragraph>
             </li>
             <li>
               <Paragraph>
                 <BoldSpan>Studying computer science</BoldSpan>{' '}
-                <ItalicSpan>at</ItalicSpan>{' '}
-                <a href='https://www.edx.org/' target='_blank' rel='noreferrer'>
-                  edX
-                </a>
+                <ItalicSpan>at</ItalicSpan> edX
               </Paragraph>
             </li>
-            {/* <li>
-              <Paragraph>
-                <BoldSpan>Freelancing web development</BoldSpan>{' '}
-                <ItalicSpan>using</ItalicSpan>{' '}
-                <a href='https://webflow.com' target='_blank' rel='noreferrer'>
-                  Webflow
-                </a>
-              </Paragraph>
-            </li> */}
             <li>
               <Paragraph>
                 <BoldSpan>Building projects</BoldSpan>{' '}
-                <ItalicSpan>using</ItalicSpan>{' '}
+                <ItalicSpan>at</ItalicSpan>{' '}
                 <a
                   href='https://github.com/adamalexali'
                   target='_blank'
@@ -185,13 +167,6 @@ const IndexPage = ({ pageContext, location }) => {
                 </a>
               </Paragraph>
             </li>
-            {/* <li>
-              <Paragraph>
-                <BoldSpan>Writing about tech & design</BoldSpan>{' '}
-                <ItalicSpan>on</ItalicSpan>{' '}
-                <a href='https://medium.com/@adamalexali'>Medium</a>
-              </Paragraph>
-            </li> */}
           </ul>
         </StyledSection>
 
@@ -200,28 +175,22 @@ const IndexPage = ({ pageContext, location }) => {
           <ul>
             <li>
               <Paragraph>
+                <BoldSpan>
+                  Evaluating web accessibility of e-learning platforms
+                </BoldSpan>{' '}
+                <ItalicSpan>with</ItalicSpan> GBC Research & Innovation
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
                 <BoldSpan>Studying interaction design</BoldSpan>{' '}
-                <ItalicSpan>at</ItalicSpan>{' '}
-                <a
-                  href='https://www.georgebrown.ca/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  George Brown College
-                </a>
+                <ItalicSpan>at</ItalicSpan> George Brown College
               </Paragraph>
             </li>
             <li>
               <Paragraph>
                 <BoldSpan>Exploring AR &amp; ecommerce</BoldSpan>{' '}
-                <ItalicSpan>with</ItalicSpan>{' '}
-                <a
-                  href='https://www.georgebrown.ca/about/office-of-research-innovation'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  GBC Research &amp; Innovation
-                </a>
+                <ItalicSpan>with</ItalicSpan> GBC Research &amp; Innovation
               </Paragraph>
             </li>
           </ul>
