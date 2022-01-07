@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import {
   Paragraph,
   StyledSection,
   StyledNav,
   StyledUl,
-  BoldSpan,
 } from '../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import ThemeToggle from '../components/themeToggle';

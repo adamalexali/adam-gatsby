@@ -143,7 +143,7 @@ table {
 background-color: transparent;
 border: none;
 text-align: center;
-font-size: 2rem;
+font-size: 1.75rem;
 cursor: pointer;
 }
 
@@ -242,6 +242,7 @@ p {
   font-size: 1.063rem;
   font-size: 1rem;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 .icon {
