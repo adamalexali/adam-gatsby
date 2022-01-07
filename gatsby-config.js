@@ -16,13 +16,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `thoughts`,
-        path: `${__dirname}/thoughts`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
