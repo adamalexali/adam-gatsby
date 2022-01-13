@@ -69,23 +69,34 @@ const IndexPage = ({ pageContext, location }) => {
             service design.
           </Paragraph>
           <Paragraph>
-            Welcome to my little corner of the internet, where I share my
-            thoughts &amp; what I'm working on. If you'd like, you can also{' '}
-            <Link to='/about'>find out more about me</Link>, and what I am up to
-            when I'm not working!
+            Welcome to my little corner of the internet; a hub where I share
+            some thoughts &amp; stuff I'm working on.{' '}
+            <BoldSpan>
+              You can see some of my design projects by visiting my{' '}
+              <a
+                href='https://www.behance.net/adamalexali'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Behance
+              </a>{' '}
+              profile, and you can check out my dev projects on my{' '}
+              <a
+                href='https://www.github.com/adamalexali/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                GitHub
+              </a>{' '}
+              page.
+            </BoldSpan>
           </Paragraph>
           <Paragraph>
-            I am particularly interested in user experience design,
-            human-machine interaction, web 3.0, and the relationship between
-            tech &amp; ethics. I write about these topics and more in my{' '}
-            <a
-              href='https://github.com/adamalexali/adam-obsidian'
-              target='_blank'
-              rel='noreferrer'
-            >
-              digital garden
-            </a>
-            .
+            I am particularly interested in user experience &#40;UX&#41; design,
+            human-computer interaction &#40;HCI&#41;, web 3.0, service design,
+            and the relationship between tech &amp; ethics. You can{' '}
+            <Link to='/about'>find out more about me</Link> &amp; my areas of
+            focus, if you're curious.
           </Paragraph>
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
@@ -121,15 +132,7 @@ const IndexPage = ({ pageContext, location }) => {
             >
               LinkedIn
             </a>
-            . Feel free to check out my{' '}
-            <a
-              href='https://www.github.com/adamalexali/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              GitHub
-            </a>{' '}
-            as well.
+            .
           </Paragraph>
         </section>
 

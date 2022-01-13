@@ -41,18 +41,33 @@ const AboutPage = ({ pageContext, location }) => {
         <section>
           <h1>About me</h1>
           <Paragraph>
-            It's always nice to know a little bit more about each other—I'm
-            grateful you are taking the time to find out more &amp; I would love
-            to hear from you!
-          </Paragraph>
-          <Paragraph>
             I am currently a student at George Brown College, completing a
-            Honours Bachelor of Design, specifically focusing on Digital
-            Experience Design. Before that, I studied and received an Advanced
-            Diploma in Interaction Design.
+            Honours Bachelor of Digital Experience Design, Before that, I
+            studied and received an Advanced Diploma in Interaction Design also
+            from George Brown. I've also self-taught myself software development
+            and computer science fundamentals in my spare time.
           </Paragraph>
           <Paragraph>
-            Below are a few of the things I've been engaging with lately.
+            I am particularly interested in user experience &#40;UX&#41; design,
+            human-computer interaction &#40;HCI&#41;, web 3.0, and the
+            relationship between tech &amp; ethics. I write about these topics
+            and more in my{' '}
+            <a
+              href='https://github.com/adamalexali/adam-obsidian'
+              target='_blank'
+              rel='noreferrer'
+            >
+              digital garden
+            </a>{' '}
+            &#40;and soon on{' '}
+            <a
+              href='https://mirror.xyz/0x836a88571b10B03149d77607aE2c99A084E713a0'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Mirror
+            </a>
+            &#41;.
           </Paragraph>
           {/* <Paragraph>
           Consider reaching out using the form below, and we can connect, chat,

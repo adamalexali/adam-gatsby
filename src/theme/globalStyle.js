@@ -192,8 +192,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica neue, Helvetica,
     sans-serif;
   margin: 1rem auto;
-  max-width: 668px;
+  // max-width: 668px;
+  max-width: 850px;
   line-height: normal;
+  padding: 0 2rem 0 2rem;
 }
 
 a {
@@ -264,6 +266,13 @@ blockquote {
 /* **************** MARKDOWN **************** */
 .post-content p {
   margin-bottom: 0.5rem;
+}
+
+/* ************* MEDIA QUERIES ************* */
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 0;
+  }
 }
 `;
 
