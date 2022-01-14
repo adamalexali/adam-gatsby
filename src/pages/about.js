@@ -42,94 +42,55 @@ const AboutPage = ({ pageContext, location }) => {
           <h1>About me</h1>
           <Paragraph>
             I am currently a student at George Brown College, completing a
-            Honours Bachelor of Digital Experience Design, Before that, I
-            studied and received an Advanced Diploma in Interaction Design also
+            Honours Bachelor of Digital Experience Design. Before that, I
+            studied and received an Advanced Diploma in Interaction Design, also
             from George Brown. I've also self-taught myself software development
-            and computer science fundamentals in my spare time.
+            and computer science in my spare time.
           </Paragraph>
           <Paragraph>
-            I am particularly interested in user experience &#40;UX&#41; design,
-            human-computer interaction &#40;HCI&#41;, web 3.0, and the
-            relationship between tech &amp; ethics. I write about these topics
-            and more in my{' '}
-            <a
-              href='https://github.com/adamalexali/adam-obsidian'
-              target='_blank'
-              rel='noreferrer'
-            >
-              digital garden
-            </a>{' '}
-            &#40;and soon on{' '}
-            <a
-              href='https://mirror.xyz/0x836a88571b10B03149d77607aE2c99A084E713a0'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Mirror
-            </a>
-            &#41;.
+            Throughout my academic and professional career, I've worked
+            "end-to-end"; i.e., I do work within a number of different roles
+            throughout the design process. This includes discovery, research,
+            wireframing, prototyping, interaction design &amp; development, and
+            user testing.
           </Paragraph>
-          {/* <Paragraph>
-          Consider reaching out using the form below, and we can connect, chat,
-          & collaborate!
-        </Paragraph> */}
+          <Paragraph>
+            I find having a wide range of knowledge &amp; skills allows me to
+            work well and communicate effectively in cross-functional teams.
+          </Paragraph>
         </section>
 
         <StyledSection>
-          <h2>Reading…</h2>
-          <Paragraph>
-            I love starting my day reading—I try to do at least 30 mins and
-            contribute to my{' '}
-            <a
-              href='https://github.com/adamalexali/adam-obsidian'
-              target='_blank'
-              rel='noreferrer'
-            >
-              notes
-            </a>{' '}
-            everyday. Let me know if you have a recommendation!
-          </Paragraph>
-        </StyledSection>
-
-        <StyledSection>
-          <h2>Writing…</h2>
-          <Paragraph>
-            Recently, I've wanted to get more into writing more formally. I am
-            working on a few articles currently… stay tuned.
-          </Paragraph>
-        </StyledSection>
-
-        <StyledSection>
-          <h2>Listening…</h2>
-          <Paragraph>
-            I really like a lot of diverse types of music, but my favourite has
-            to be metal (I won't get pedantic about the subgenres).
-          </Paragraph>
-          <Paragraph>
-            Hip hop and old-school soul are both up there as well.
-          </Paragraph>
-        </StyledSection>
-
-        <section>
-          <h2>Playing…</h2>
-          <Paragraph>
-            Ever since I was young I've played video games. These days I feel
-            like I have less and less time to play, but I still like to keep up
-            with the latest news and hop on every now and then.
-          </Paragraph>
-          <Paragraph>Some of the game I'm playing lately include:</Paragraph>
+          <h2>More…</h2>
+          <Paragraph>Some other things I am interested in:</Paragraph>
           <StyledUl>
             <li>
-              <Paragraph>Valorant</Paragraph>
+              <Paragraph>Accessibility</Paragraph>
             </li>
             <li>
-              <Paragraph>Halo Infinite</Paragraph>
+              <Paragraph>Decentralization</Paragraph>
             </li>
             <li>
-              <Paragraph>Pillars of Eternity</Paragraph>
+              <Paragraph>
+                Metal, -core subgenres; hip-hop; soul, "Motown"; electronic
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                Video games &#40;currently enjoying Pillars of Eternity&#41;
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>Anime</Paragraph>
+            </li>
+            <li>
+              <Paragraph>Running; working out</Paragraph>
+            </li>
+            <li>
+              <Paragraph>Gardening; plants</Paragraph>
             </li>
           </StyledUl>
-        </section>
+        </StyledSection>
       </Content>
       <Footer />
     </>

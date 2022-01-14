@@ -93,10 +93,11 @@ const IndexPage = ({ pageContext, location }) => {
           </Paragraph>
           <Paragraph>
             I am particularly interested in user experience &#40;UX&#41; design,
-            human-computer interaction &#40;HCI&#41;, web 3.0, service design,
-            and the relationship between tech &amp; ethics. You can{' '}
-            <Link to='/about'>find out more about me</Link> &amp; my areas of
-            focus, if you're curious.
+            human-computer interaction &#40;HCI&#41;, service design, the
+            decentralized web, and the relationship between tech &amp; ethics.
+            You can{' '}
+            <Link to='/about'>find out more about me &amp; my interests</Link>,
+            if you're curious.
           </Paragraph>
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
