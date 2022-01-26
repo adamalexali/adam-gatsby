@@ -62,7 +62,7 @@ const IndexPage = ({ pageContext, location }) => {
           <Paragraph>
             I'm{' '}
             <BoldSpan>
-              Adam—a human-centered UX developer, researcher, and technologist
+              Adam—a human-centered UX developer and researcher
             </BoldSpan>{' '}
             equipped with an interdisciplinary foundation in digital
             experience—including UX, HCI, web development, systems design, and
@@ -99,6 +99,30 @@ const IndexPage = ({ pageContext, location }) => {
             <Link to='/about'>find out more about me &amp; my interests</Link>,
             if you're curious.
           </Paragraph>
+          {/* <Paragraph>
+            I am particularly interested in user experience &#40;UX&#41; design,
+            human-computer interaction &#40;HCI&#41;, service design, the
+            decentralized web, and the relationship between tech &amp; ethics. I
+            write about a lot of these topics in my "
+            <a
+              href='https://github.com/adamalexali/obsidian'
+              target='_blank'
+              rel='noreferrer'
+            >
+              digital garden
+            </a>
+            " &#40;and soon{' '}
+            <a
+              href='https://mirror.xyz/0x836a88571b10B03149d77607aE2c99A084E713a0'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Mirror
+            </a>
+            &#41;. You can{' '}
+            <Link to='/about'>find out more about me &amp; my interests</Link>,
+            if you're curious.
+          </Paragraph> */}
           <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
             digital public spaces—in whatever ways I can achieve that. I'm
