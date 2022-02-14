@@ -59,8 +59,9 @@ export const StyledFooter = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
-
-export const FooterText = styled.p`
   font-size: 0.625rem;
 `;
+
+// export const FooterText = styled.p`
+//   font-size: 0.625rem;
+// `;

@@ -40,44 +40,33 @@ const IndexPage = ({ pageContext, location }) => {
           <ThemeToggle />
         </StyledNav>
 
+        <h1>Adam Ali</h1>
         <section>
-          <h1>
-            <span role='img' aria-label='waving hand emoji'>
-              👋
-            </span>{' '}
-            Hello!
-          </h1>
           <Paragraph>
-            I'm{' '}
-            <BoldSpan>
-              Adam—a human-centered UX developer and researcher
-            </BoldSpan>{' '}
+            Hello! I'm Adam, a human-centered UX developer and researcher
             equipped with an interdisciplinary foundation in digital
             experience—including UX, HCI, web development, systems design, and
             service design.
           </Paragraph>
           <Paragraph>
-            Welcome to my little corner of the internet; a hub where I share
-            some thoughts &amp; stuff I'm working on.{' '}
-            <BoldSpan>
-              You can see some of my design projects by visiting my{' '}
-              <a
-                href='https://www.behance.net/adamalexali'
-                target='_blank'
-                rel='noreferrer'
-              >
-                Behance
-              </a>{' '}
-              profile, and you can check out my dev projects on my{' '}
-              <a
-                href='https://www.github.com/adamalexali/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                GitHub
-              </a>{' '}
-              page.
-            </BoldSpan>
+            Welcome to my little corner of the internet. You can see some of my
+            design projects by visiting my{' '}
+            <a
+              href='https://www.behance.net/adamalexali'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Behance
+            </a>{' '}
+            profile, and you can check out my dev projects on my{' '}
+            <a
+              href='https://www.github.com/adamalexali/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              GitHub
+            </a>{' '}
+            page.
           </Paragraph>
           <Paragraph>
             I am particularly interested in user experience &#40;UX&#41; design,
@@ -143,6 +132,12 @@ const IndexPage = ({ pageContext, location }) => {
           </Paragraph>
         </section>
 
+        <StyledSection>
+          <h2>Selected Works</h2>
+          <Link to='/work/front-end-coop'>
+            Front-End Co-op Placement (2020)
+          </Link>
+        </StyledSection>
         <StyledSection>
           <h2>Currently…</h2>
           <ul>

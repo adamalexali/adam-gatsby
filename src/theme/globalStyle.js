@@ -261,12 +261,16 @@ blockquote {
   padding-left: 1rem;
 }
 
-.skillsList {
+.skillsList, .footerList {
   display: inline;
   list-style: none;
 }
 
-.skillsList li {
+.footerList {
+  margin-bottom: 0.5rem;
+}
+
+.skillsList li, .footerList li {
   display: inline;
 }
 
@@ -274,7 +278,7 @@ blockquote {
   content: ', ';
 }
 
-.skillsList li:last-child:after {
+.skillsList li:last-child:after, .inlineList li:last-child:after {
   content: '';
 }
 

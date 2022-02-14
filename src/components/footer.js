@@ -5,14 +5,48 @@ import { StyledFooter, FooterText } from '../theme/styled-elements';
 const Footer = () => {
   return (
     <StyledFooter>
-      <FooterText>
+      <ul className='footerList'>
+        <li>
+          <a
+            href='https://twitter.com/adamalexali'
+            target='_blank'
+            rel='noreferrer'
+            className='external-link'
+          >
+            Twitter
+          </a>
+        </li>{' '}
+        |{' '}
+        <li>
+          <a
+            href='https://github.com/adamalexali'
+            target='_blank'
+            rel='noreferrer'
+            className='external-link'
+          >
+            GitHub
+          </a>
+        </li>{' '}
+        |{' '}
+        <li>
+          <a
+            href='https://www.linkedin.com/in/adamalexali/'
+            target='_blank'
+            rel='noreferrer'
+            className='external-link'
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+      <p>
         Created with{' '}
         <span role='img' aria-label='unicode white heart suit'>
           ♡
         </span>{' '}
         by Adam
-      </FooterText>
-      <FooterText>
+      </p>
+      {/* <p>
         {' '}
         <a
           href='https://github.com/adamalexali/adam-gatsby'
@@ -22,7 +56,7 @@ const Footer = () => {
         >
           source
         </a>{' '}
-      </FooterText>
+      </p> */}
       {/* Other attribution: */}
       {/* Favicon generated from Twitter Twemoji: */}
       {/* - Graphics Title: 1f48e.svg*/}

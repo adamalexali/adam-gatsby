@@ -142,15 +142,21 @@ const Resume = ({ pageContext, location }) => {
             <h1>Adam Ali</h1>
             <address className='rightAlign'>
               Keswick, ON L4P 4G3 <br />
-              <a href='mailto:adamalexali@gmail.com'>
+              <a
+                href='mailto:adamalexali@gmail.com'
+                target='_blank'
+                rel='noreferrer'
+                className='external-link'
+              >
                 adamalexali@gmail.com
               </a>{' '}
               <br />
-              <a href='tel:+12899260221'>+1 (289) 926-0221</a> <br />
+              <p>+1 (289) 926-0221</p>
               <a
                 href='https://adamalexali.com'
                 target='_blank'
                 rel='noreferrer'
+                className='external-link'
               >
                 adamalexali.com
               </a>{' '}
@@ -159,6 +165,7 @@ const Resume = ({ pageContext, location }) => {
                 href='https://www.linkedin.com/in/adamalexali/'
                 target='_blank'
                 rel='noreferrer'
+                className='external-link'
               >
                 LinkedIn
               </a>
