@@ -105,7 +105,9 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
 ol,
 ul {
@@ -132,6 +134,7 @@ table {
   --black: #222;
   --white: #fff;
   --off-white: #f2f2f2;
+  --grey: #999999;
   --light: #faf8f6;
   --lightLinks: #0000ff;
   --lightLinksActive: #3232ff;
@@ -140,11 +143,11 @@ table {
 }
 
 #themeToggleBtn {
-background-color: transparent;
-border: none;
-text-align: center;
-font-size: 1.75rem;
-cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 1.75rem;
+  cursor: pointer;
 }
 
 /* **************** LIGHTMODE ****************  */
@@ -157,7 +160,8 @@ body.light a {
   color: var(--lightLinks);
 }
 
-body.light a:active, body.light a:hover {
+body.light a:active,
+body.light a:hover {
   color: var(--lightLinksActive);
 }
 
@@ -171,7 +175,8 @@ body.dark a {
   color: var(--darkLinks);
 }
 
-body.dark a:active, body.dark a:hover  {
+body.dark a:active,
+body.dark a:hover {
   color: var(--darkLinksActive);
 }
 
@@ -180,7 +185,6 @@ body.dark a:active, body.dark a:hover  {
   list-style: none;
   padding: 0;
   text-transform: lowercase;
-  // margin-bottom: 1rem;
 }
 
 .breadcrumb__list > li {
@@ -192,9 +196,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica neue, Helvetica,
     sans-serif;
   margin: 1rem auto;
-  // max-width: 668px;
   max-width: 850px;
-  line-height: normal;
   padding: 0 2rem 0 2rem;
 }
 
@@ -212,39 +214,34 @@ a[target='_blank']::after {
 
 h1,
 h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+h2 {
+  font-size: 1.25em;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  // font-size: 1rem;
+  font-style: italic;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 1rem;
-}
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 1rem;
-}
-h3 {
-  font-size: 1.25em;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
-}
-h4 {
-  font-size: 1.125rem;
-}
 h5,
 h6 {
-  font-size: 1.125rem;
-}
-
-p {
-  font-size: 1.063rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
+  color: var(--grey);
 }
 
 .icon {
@@ -253,14 +250,26 @@ p {
   margin: 10px;
 }
 
-ul,
-ol {
-  // padding-left: 1.375rem;
-}
-
 blockquote {
   border-left: 2px solid var(--black);
   padding-left: 1rem;
+}
+
+.skillsList {
+  display: inline;
+  list-style: none;
+}
+
+.skillsList li {
+  display: inline;
+}
+
+.skillsList li:after {
+  content: ', ';
+}
+
+.skillsList li:last-child:after {
+  content: '';
 }
 
 /* **************** MARKDOWN **************** */

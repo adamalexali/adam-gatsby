@@ -46,5 +46,5 @@ export const StyledFooter = styled.footer`
 `;
 
 export const FooterText = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.625rem;
 `;

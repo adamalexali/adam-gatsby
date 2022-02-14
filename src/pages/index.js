@@ -133,6 +133,10 @@ const IndexPage = ({ pageContext, location }) => {
             Don't hesitate to reach out!{' '}
             <BoldSpan>
               If you're interested in working together, you can{' '}
+              <Link to='/resume'>view and download my resume</Link>,
+            </BoldSpan>{' '}
+            {/* <BoldSpan>
+              If you're interested in working together, you can{' '}
               <a
                 href={data.allFile.edges[0].node.publicURL}
                 target='_blank'
@@ -140,7 +144,7 @@ const IndexPage = ({ pageContext, location }) => {
               >
                 download my resume
               </a>
-            </BoldSpan>{' '}
+            </BoldSpan>{' '} */}
             or shoot me a message on{' '}
             <a
               href='https://twitter.com/adamalexali/'
