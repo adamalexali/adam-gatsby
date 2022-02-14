@@ -165,6 +165,12 @@ body.light a:hover {
   color: var(--lightLinksActive);
 }
 
+.underlinedHeader {
+  padding-bottom: 0.125rem;
+  border-bottom: 1px solid currentColor;
+  margin-bottom: 0.5rem;
+}
+
 /* **************** DARKMODE **************** */
 body.dark {
   background-color: var(--black);
@@ -272,6 +278,10 @@ blockquote {
   content: '';
 }
 
+.rightAlign {
+  text-align: right;
+}
+
 /* **************** MARKDOWN **************** */
 .post-content p {
   margin-bottom: 0.5rem;
@@ -282,6 +292,9 @@ blockquote {
   body {
     padding: 0;
   }
+  .rightAlign {
+  text-align: left;
+}
 }
 `;
 

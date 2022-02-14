@@ -20,13 +20,29 @@ export const StyledDiv = styled.div`
   margin-bottom: 1.25rem;
 `;
 
+export const FlexDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    text-align: left;
+  }
+`;
+
 export const StyledSection = styled.section`
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 `;
 
 export const StyledUl = styled.ul`
   list-style-type: disc;
-  padding-left: 1.375rem;
+  padding-left: 40px;
+
+  @media only screen and (max-width: 700px) {
+    padding-left: 1rem;
+  }
 `;
 
 export const BoldSpan = styled.span`

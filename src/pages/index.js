@@ -14,18 +14,6 @@ import Footer from '../components/footer';
 
 // markup
 const IndexPage = ({ pageContext, location }) => {
-  const data = useStaticQuery(graphql`
-    {
-      allFile(filter: { extension: { eq: "pdf" } }) {
-        edges {
-          node {
-            publicURL
-          }
-        }
-      }
-    }
-  `);
-
   const {
     breadcrumb: { crumbs },
   } = pageContext;
@@ -133,19 +121,9 @@ const IndexPage = ({ pageContext, location }) => {
             Don't hesitate to reach out!{' '}
             <BoldSpan>
               If you're interested in working together, you can{' '}
-              <Link to='/resume'>view and download my resume</Link>,
+              <Link to='/resume'>view my resume</Link>,
             </BoldSpan>{' '}
-            {/* <BoldSpan>
-              If you're interested in working together, you can{' '}
-              <a
-                href={data.allFile.edges[0].node.publicURL}
-                target='_blank'
-                rel='noreferrer'
-              >
-                download my resume
-              </a>
-            </BoldSpan>{' '} */}
-            or shoot me a message on{' '}
+            or just shoot me a message on{' '}
             <a
               href='https://twitter.com/adamalexali/'
               target='_blank'

@@ -1,9 +1,13 @@
 import * as React from 'react';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+
 import {
   Paragraph,
   StyledSection,
   StyledNav,
   StyledUl,
+  FlexDiv,
+  StyledDiv,
 } from '../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import ThemeToggle from '../components/themeToggle';
@@ -84,7 +88,19 @@ const childProps = [
   },
 ];
 
-const resume = ({ pageContext, location }) => {
+const Resume = ({ pageContext, location }) => {
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: { extension: { eq: "pdf" } }) {
+        edges {
+          node {
+            publicURL
+          }
+        }
+      }
+    }
+  `);
+
   const {
     breadcrumb: { crumbs },
   } = pageContext;
@@ -95,7 +111,7 @@ const resume = ({ pageContext, location }) => {
     <>
       <Content
         pageMeta={{
-          title: 'About |',
+          title: 'Resume |',
           keywords: ['ux', 'front-end', 'designer', 'developer'],
           description:
             'Adam Ali is a multidisciplinary developer exploring the intersections of people, design, and technology.',
@@ -113,49 +129,70 @@ const resume = ({ pageContext, location }) => {
         </StyledNav>
 
         <section>
-          <h1>Adam Ali</h1>
-          <address>
-            Keswick, ON L4P 4G3 <br />
-            <a href='mailto:adamalexali@gmail.com'>
-              adamalexali@gmail.com
-            </a>{' '}
-            <br />
-            <a href='tel:+12899260221'>+1 (289) 926-0221</a> <br />
-            <a href='https://adamalexali.com' target='_blank' rel='noreferrer'>
-              adamalexali.com
-            </a>{' '}
-            |{' '}
-            <a
-              href='https://www.linkedin.com/in/adamalexali/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              LinkedIn
-            </a>
-          </address>
+          <a
+            href={data.allFile.edges[0].node.publicURL}
+            target='_blank'
+            rel='noreferrer'
+          >
+            Download a PDF version
+          </a>
+        </section>
+        <StyledSection>
+          <FlexDiv>
+            <h1>Adam Ali</h1>
+            <address className='rightAlign'>
+              Keswick, ON L4P 4G3 <br />
+              <a href='mailto:adamalexali@gmail.com'>
+                adamalexali@gmail.com
+              </a>{' '}
+              <br />
+              <a href='tel:+12899260221'>+1 (289) 926-0221</a> <br />
+              <a
+                href='https://adamalexali.com'
+                target='_blank'
+                rel='noreferrer'
+              >
+                adamalexali.com
+              </a>{' '}
+              |{' '}
+              <a
+                href='https://www.linkedin.com/in/adamalexali/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                LinkedIn
+              </a>
+            </address>
+          </FlexDiv>
           <p>
             Adam is a passionate individual with an interdisciplinary foundation
             in digital experience design. With over three years of experience,
             he is dedicated to delivering high-value solutions that support user
             and client goals.
           </p>
-        </section>
+        </StyledSection>
         <StyledSection>
-          <h2>Work experience</h2>
+          <h2 className='underlinedHeader'>Work Experience</h2>
           <WorkExperienceTemplate jobs={childProps} />
         </StyledSection>
         <StyledSection>
-          <h2>Education</h2>
+          <h2 className='underlinedHeader'>Education</h2>
           <div>
-            <h3>Honours Bachelor of Digital Experience Design</h3>
-            <h4>George Brown College</h4>
-            <div>
-              <h5>
-                <time dateTime='2020-05'>May 2020</time>&ndash;
-                <time dateTime='2022-04'>current (exp. April 2022)</time>
-              </h5>
-            </div>
-            <h5>Student; full-time</h5>
+            <FlexDiv>
+              <div>
+                <h3>Honours Bachelor of Digital Experience Design</h3>
+                <h4>George Brown College</h4>
+              </div>
+              <div className='rightAlign'>
+                <div>
+                  <h5>
+                    <time dateTime='2020-05'>May 2020</time>&ndash;
+                    <time dateTime='2022-04'>current (exp. April 2022)</time>
+                  </h5>
+                </div>
+                <h5>Student; full-time</h5>
+              </div>
+            </FlexDiv>
             <StyledUl>
               <li>
                 Previously received Advanced Diploma in Interaction Design
@@ -166,8 +203,8 @@ const resume = ({ pageContext, location }) => {
           </div>
         </StyledSection>
         <section>
-          <h2>Skills</h2>
-          <div>
+          <h2 className='underlinedHeader'>Skills</h2>
+          <StyledDiv>
             <h3>Technical</h3>
             <ul className='skillsList'>
               <li>HTML</li>
@@ -193,7 +230,7 @@ const resume = ({ pageContext, location }) => {
               <li>WCAG</li>
               <li>SEO</li>
             </ul>
-          </div>
+          </StyledDiv>
           <div>
             <h3>Personal</h3>
             <ul className='skillsList'>
@@ -220,4 +257,4 @@ const resume = ({ pageContext, location }) => {
   );
 };
 
-export default resume;
+export default Resume;
