@@ -12,7 +12,8 @@ import Content from '../../components/content';
 import Footer from '../../components/footer';
 import FeaturedProjectTemplate from '../../components/featureProject';
 import { jobDetails } from '../resume';
-// import {calendar, } from '../../images/projectImages/lmh/calendar.png';
+import { StaticImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
 
 const LMHCoop = ({ pageContext, location }) => {
   const {
@@ -25,25 +26,20 @@ const LMHCoop = ({ pageContext, location }) => {
 
   const customCrumbLabel = getLastItem(thePath).toLowerCase().replace('/', ' ');
 
-  const data = useStaticQuery(graphql`
-    {
-      allFile(
-        filter: {
-          extension: { eq: "png" }
-          relativeDirectory: { eq: "images/projectImages/lmh" }
-        }
-      ) {
-        edges {
-          node {
-            id
-            name
-            relativeDirectory
-            publicURL
-          }
-        }
-      }
+  const FlexDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
     }
-  `);
+  `;
+
+  const FlexDivSingle = styled(FlexDiv)`
+    justify-content: center;
+  `;
 
   return (
     <>
@@ -89,19 +85,29 @@ const LMHCoop = ({ pageContext, location }) => {
             as user experience research.
           </Paragraph>
         </StyledSection>
-        <StyledSection>
-          {/*  */}
-          {/* <ul>
-            {data.allFile.edges.map((file, index) => {
-              return (
-                <li key={`pdf-${index}`}>
-                  <img src={file.node.publicURL} alt='' />
-                </li>
-              );
-            })}
-          </ul> */}
-          <img src={data.allFile.edges.node.publicURL} alt='' />
-        </StyledSection>
+        <FlexDiv>
+          <StaticImage
+            src='../../images/projectImages/lmh/calendar.png'
+            alt='LinkMentalHealth logo'
+            placeholder='blurred'
+            // layout='fixed'
+            width={250}
+          />
+          <StaticImage
+            src='../../images/projectImages/lmh/savings.png'
+            alt='LinkMentalHealth logo'
+            placeholder='blurred'
+            // layout='fixed'
+            width={250}
+          />
+          <StaticImage
+            src='../../images/projectImages/lmh/people-search.png'
+            alt='LinkMentalHealth logo'
+            placeholder='blurred'
+            // layout='fixed'
+            width={250}
+          />
+        </FlexDiv>
         <StyledSection>
           <h2>Problem &amp; Challenge</h2>
           <Paragraph>
@@ -142,6 +148,20 @@ const LMHCoop = ({ pageContext, location }) => {
             making sure the branding guidelines were consistent and maintained
             throughout the entire website.
           </Paragraph>
+          <FlexDiv>
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_persona2.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+            />
+          </FlexDiv>
+          <FlexDiv>
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_userjourney.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+            />
+          </FlexDiv>
           <Paragraph>
             Finally, towards the end of my placement, I was tasked with working
             with another member of the team to begin UX research—I started with
@@ -152,6 +172,54 @@ const LMHCoop = ({ pageContext, location }) => {
             could be completed, but I was still able to effectively help the
             team using the skills I've learned regarding user experience.
           </Paragraph>
+          <FlexDiv>
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_sketches.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+              // layout='fixed'
+              width={250}
+            />
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_sketches2.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+              // layout='fixed'
+              width={250}
+            />
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_sketches3.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+              // layout='fixed'
+              width={250}
+            />
+          </FlexDiv>
+          <FlexDiv>
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_wireframes1.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+              // layout='fixed'
+              height={250}
+            />
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_therapistProfile.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+              // layout='fixed'
+              height={250}
+            />
+          </FlexDiv>
+          <FlexDivSingle>
+            <StaticImage
+              src='../../images/projectImages/lmh/lmh_employersPage.png'
+              alt='LinkMentalHealth logo'
+              placeholder='blurred'
+              // layout='fixed'
+              // height={250}
+            />
+          </FlexDivSingle>
         </StyledSection>
         <StyledSection>
           <h2>Reflection</h2>
