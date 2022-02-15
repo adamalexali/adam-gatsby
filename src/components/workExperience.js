@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { StyledUl, StyledDiv, FlexDiv } from '../theme/styled-elements';
 
-const WorkExperienceTemplate = ({ jobs }) => {
-  return jobs.map((job) => (
+const WorkExperienceTemplate = ({ jobDetails }) => {
+  return jobDetails.map((job) => (
     <StyledDiv>
       <FlexDiv>
         <div>

@@ -43,36 +43,18 @@ const IndexPage = ({ pageContext, location }) => {
         <h1>Adam Ali</h1>
         <section>
           <Paragraph>
-            Hello! I'm Adam, a human-centered UX developer and researcher
+            Hello! I'm Adam, a human-centered{' '}
+            <abbr title='user experience'>UX</abbr> developer and researcher
             equipped with an interdisciplinary foundation in digital
-            experience—including UX, HCI, web development, systems design, and
-            service design.
+            experience—including UX,{' '}
+            <abbr title='human-computer interaction'>HCI</abbr>, web
+            development, systems design, and service design.
           </Paragraph>
+          <Paragraph>Welcome to my little corner of the internet!</Paragraph>
           <Paragraph>
-            Welcome to my little corner of the internet. You can see some of my
-            design projects by visiting my{' '}
-            <a
-              href='https://www.behance.net/adamalexali'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Behance
-            </a>{' '}
-            profile, and you can check out my dev projects on my{' '}
-            <a
-              href='https://www.github.com/adamalexali/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              GitHub
-            </a>{' '}
-            page.
-          </Paragraph>
-          <Paragraph>
-            I am particularly interested in user experience &#40;UX&#41; design,
-            human-computer interaction &#40;HCI&#41;, service design, the
-            decentralized web, and the relationship between tech &amp; ethics.
-            You can{' '}
+            I am particularly interested in user experience design,
+            human-computer interaction, service design, networks, and the
+            relationship between tech &amp; ethics. You can{' '}
             <Link to='/about'>find out more about me &amp; my interests</Link>,
             if you're curious.
           </Paragraph>
@@ -127,16 +109,59 @@ const IndexPage = ({ pageContext, location }) => {
               rel='noreferrer'
             >
               LinkedIn
-            </a>
-            .
+            </a>{' '}
+            &#40;or{' '}
+            <a
+              href='mailto:adamalexali@gmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              email me
+            </a>{' '}
+            if you want to get real archaic!&#41;.
           </Paragraph>
         </section>
 
         <StyledSection>
           <h2>Selected Works</h2>
-          <Link to='/work/front-end-coop'>
-            Front-End Co-op Placement (2020)
-          </Link>
+          <Paragraph>
+            Below you'll find case studies of some of my recent work as an
+            experience designer. This includes work as a front-end developer,
+            and as a UX researcher/designer.
+          </Paragraph>
+          <Paragraph>
+            You can also see samples my design work by visiting my{' '}
+            <a
+              href='https://www.behance.net/adamalexali'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Behance
+            </a>{' '}
+            profile.
+          </Paragraph>
+          <ul>
+            <li>
+              <Paragraph>
+                <Link to='/work/lmh-coop'>
+                  Front-End Co-op Placement (
+                  <time dateTime='2020-01'>January 2020</time>
+                  &ndash;
+                  <time dateTime='2020-05'>May 2020</time>)
+                </Link>
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                <Link to='/work/gbc-ar-research'>
+                  Augmented Reality UX Research Project (
+                  <time dateTime='2019-09'>September 2019</time>
+                  &ndash;
+                  <time dateTime='2020-06'>June 2020</time>)
+                </Link>
+              </Paragraph>
+            </li>
+          </ul>
         </StyledSection>
         <StyledSection>
           <h2>Currently…</h2>
@@ -162,14 +187,7 @@ const IndexPage = ({ pageContext, location }) => {
             <li>
               <Paragraph>
                 <BoldSpan>Building projects</BoldSpan>{' '}
-                <ItalicSpan>at</ItalicSpan>{' '}
-                <a
-                  href='https://github.com/adamalexali'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  Github
-                </a>
+                <ItalicSpan>at</ItalicSpan> Github
               </Paragraph>
             </li>
           </ul>
@@ -194,7 +212,10 @@ const IndexPage = ({ pageContext, location }) => {
             </li>
             <li>
               <Paragraph>
-                <BoldSpan>Exploring AR &amp; ecommerce</BoldSpan>{' '}
+                <BoldSpan>
+                  Exploring <abbr title='extended reality'>XR</abbr> &amp;
+                  ecommerce
+                </BoldSpan>{' '}
                 <ItalicSpan>with</ItalicSpan> GBC Research &amp; Innovation
               </Paragraph>
             </li>

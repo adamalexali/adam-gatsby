@@ -202,7 +202,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica neue, Helvetica,
     sans-serif;
   margin: 1rem auto;
-  max-width: 850px;
+  max-width: 775px;
   padding: 0 2rem 0 2rem;
 }
 
@@ -232,6 +232,7 @@ h6 {
 
 h1 {
   font-size: 1.75em;
+  margin-bottom: 0.5rem;
 }
 h2 {
   font-size: 1.25em;

@@ -15,7 +15,7 @@ import WorkExperienceTemplate from '../components/workExperience';
 import Content from '../components/content';
 import Footer from '../components/footer';
 
-const childProps = [
+export const jobDetails = [
   {
     role: 'UX Researcher',
     company: 'GBC Research & Innovation',
@@ -57,6 +57,7 @@ const childProps = [
       'Co-designed personas, journeys, & wireframes to gather insights into online/in-store UX',
       'Developed & showcased functional prototype of AR application along with UX solutions to stakeholders',
     ],
+    tools: ['Illustrator', 'Figma', 'Aero', 'Unity 3D'],
   },
   {
     role: 'Front-End Developer',
@@ -70,6 +71,17 @@ const childProps = [
       'Optimized UX by restructuring information architecture and employing visual design principles',
       'Refined user flows, created wireframes; wrote web content/copy; assisted in conducting user tests',
       'Contributed to project management; design of front-end website & maintenance of back-end database',
+    ],
+    tools: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Bootstrap',
+      'MongoDB',
+      'NodeJS',
+      'Express',
+      'Figma',
+      'Illustrator',
     ],
   },
   {
@@ -180,7 +192,7 @@ const Resume = ({ pageContext, location }) => {
         </StyledSection>
         <StyledSection>
           <h2 className='underlinedHeader'>Work Experience</h2>
-          <WorkExperienceTemplate jobs={childProps} />
+          <WorkExperienceTemplate jobDetails={jobDetails} />
         </StyledSection>
         <StyledSection>
           <h2 className='underlinedHeader'>Education</h2>
