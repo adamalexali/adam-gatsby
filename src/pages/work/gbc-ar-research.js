@@ -1,9 +1,9 @@
 import * as React from 'react';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import {
   Paragraph,
   StyledSection,
   StyledNav,
-  StyledUl,
 } from '../../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import ThemeToggle from '../../components/themeToggle';
@@ -46,7 +46,8 @@ const MeasureAR = ({ pageContext, location }) => {
     padding: 1rem;
 
     @media only screen and (max-width: 700px) {
-      flex-direction: column;
+      grid-auto-flow: row;
+      justify-items: center;
     }
   `;
 
@@ -261,6 +262,12 @@ const MeasureAR = ({ pageContext, location }) => {
             with the resources we have available.
           </Paragraph>
         </StyledSection>
+        <section style={{ textAlign: 'center' }}>
+          <Paragraph>
+            Next project—
+            <Link to='/work/lmh-coop'>Front-End Co-op Placement</Link>
+          </Paragraph>
+        </section>
       </Content>
       <Footer />
     </>

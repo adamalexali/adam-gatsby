@@ -300,6 +300,11 @@ blockquote {
   .rightAlign {
   text-align: left;
 }
+
+iframe {
+  width: 90%;
+  height: auto;
+}
 }
 `;
 

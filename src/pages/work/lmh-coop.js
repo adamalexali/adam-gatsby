@@ -4,7 +4,6 @@ import {
   Paragraph,
   StyledSection,
   StyledNav,
-  StyledUl,
 } from '../../theme/styled-elements';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import ThemeToggle from '../../components/themeToggle';
@@ -30,10 +29,23 @@ const LMHCoop = ({ pageContext, location }) => {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    padding: 1rem;
 
     @media only screen and (max-width: 700px) {
       flex-direction: column;
+    }
+  `;
+
+  const GridDiv = styled.div`
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+
+    @media only screen and (max-width: 700px) {
+      grid-auto-flow: row;
+      justify-items: center;
     }
   `;
 
@@ -85,7 +97,7 @@ const LMHCoop = ({ pageContext, location }) => {
             as user experience research.
           </Paragraph>
         </StyledSection>
-        <FlexDiv>
+        <GridDiv>
           <StaticImage
             src='../../images/projectImages/lmh/calendar.png'
             alt='calendar illustration'
@@ -107,7 +119,7 @@ const LMHCoop = ({ pageContext, location }) => {
             // layout='fixed'
             width={250}
           />
-        </FlexDiv>
+        </GridDiv>
         <StyledSection>
           <h2>Problem &amp; Challenge</h2>
           <Paragraph>
@@ -172,7 +184,7 @@ const LMHCoop = ({ pageContext, location }) => {
             could be completed, but I was still able to effectively help the
             team using the skills I've learned regarding user experience.
           </Paragraph>
-          <FlexDiv>
+          <GridDiv>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_sketches.png'
               alt='interface sketches (1)'
@@ -194,8 +206,8 @@ const LMHCoop = ({ pageContext, location }) => {
               // layout='fixed'
               width={250}
             />
-          </FlexDiv>
-          <FlexDiv>
+          </GridDiv>
+          <GridDiv>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_wireframes1.png'
               alt='interface wireframes (1)'
@@ -210,7 +222,7 @@ const LMHCoop = ({ pageContext, location }) => {
               // layout='fixed'
               height={250}
             />
-          </FlexDiv>
+          </GridDiv>
           <FlexDivSingle>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_employersPage.png'
@@ -269,6 +281,14 @@ const LMHCoop = ({ pageContext, location }) => {
             />
           </FlexDivSingle>
         </StyledSection>
+        <section style={{ textAlign: 'center' }}>
+          <Paragraph>
+            Next project—
+            <Link to='/work/gbc-ar-research'>
+              Augmented Reality UX Research Project
+            </Link>
+          </Paragraph>
+        </section>
       </Content>
       <Footer />
     </>

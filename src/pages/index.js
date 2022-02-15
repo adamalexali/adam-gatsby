@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
+import styled from 'styled-components';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import {
   Paragraph,
@@ -18,7 +19,9 @@ const IndexPage = ({ pageContext, location }) => {
     breadcrumb: { crumbs },
   } = pageContext;
 
-  // const customCrumbLabel = location.pathname.toLowerCase().replace('/', ' ');
+  const StyledH3 = styled.h3`
+    margin-bottom: 0.5rem;
+  `;
 
   return (
     <>
@@ -142,24 +145,24 @@ const IndexPage = ({ pageContext, location }) => {
           </Paragraph>
           <ul>
             <li>
-              <Paragraph>
+              <StyledH3>
                 <Link to='/work/lmh-coop'>
                   Front-End Co-op Placement (
                   <time dateTime='2020-01'>January 2020</time>
                   &ndash;
                   <time dateTime='2020-05'>May 2020</time>)
                 </Link>
-              </Paragraph>
+              </StyledH3>
             </li>
             <li>
-              <Paragraph>
+              <StyledH3>
                 <Link to='/work/gbc-ar-research'>
                   Augmented Reality UX Research Project (
                   <time dateTime='2019-09'>September 2019</time>
                   &ndash;
                   <time dateTime='2020-06'>June 2020</time>)
                 </Link>
-              </Paragraph>
+              </StyledH3>
             </li>
           </ul>
         </StyledSection>
