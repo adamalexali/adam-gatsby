@@ -88,21 +88,21 @@ const LMHCoop = ({ pageContext, location }) => {
         <FlexDiv>
           <StaticImage
             src='../../images/projectImages/lmh/calendar.png'
-            alt='LinkMentalHealth logo'
+            alt='calendar illustration'
             placeholder='blurred'
             // layout='fixed'
             width={250}
           />
           <StaticImage
             src='../../images/projectImages/lmh/savings.png'
-            alt='LinkMentalHealth logo'
+            alt='savings illustration'
             placeholder='blurred'
             // layout='fixed'
             width={250}
           />
           <StaticImage
             src='../../images/projectImages/lmh/people-search.png'
-            alt='LinkMentalHealth logo'
+            alt='search illustration'
             placeholder='blurred'
             // layout='fixed'
             width={250}
@@ -148,20 +148,20 @@ const LMHCoop = ({ pageContext, location }) => {
             making sure the branding guidelines were consistent and maintained
             throughout the entire website.
           </Paragraph>
-          <FlexDiv>
+          <FlexDivSingle>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_persona2.png'
-              alt='LinkMentalHealth logo'
+              alt='persona'
               placeholder='blurred'
             />
-          </FlexDiv>
-          <FlexDiv>
+          </FlexDivSingle>
+          <FlexDivSingle>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_userjourney.png'
-              alt='LinkMentalHealth logo'
+              alt='user journey'
               placeholder='blurred'
             />
-          </FlexDiv>
+          </FlexDivSingle>
           <Paragraph>
             Finally, towards the end of my placement, I was tasked with working
             with another member of the team to begin UX research—I started with
@@ -175,21 +175,21 @@ const LMHCoop = ({ pageContext, location }) => {
           <FlexDiv>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_sketches.png'
-              alt='LinkMentalHealth logo'
+              alt='interface sketches (1)'
               placeholder='blurred'
               // layout='fixed'
               width={250}
             />
             <StaticImage
               src='../../images/projectImages/lmh/lmh_sketches2.png'
-              alt='LinkMentalHealth logo'
+              alt='interface sketches (2)'
               placeholder='blurred'
               // layout='fixed'
               width={250}
             />
             <StaticImage
               src='../../images/projectImages/lmh/lmh_sketches3.png'
-              alt='LinkMentalHealth logo'
+              alt='interface sketches (3)'
               placeholder='blurred'
               // layout='fixed'
               width={250}
@@ -198,14 +198,14 @@ const LMHCoop = ({ pageContext, location }) => {
           <FlexDiv>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_wireframes1.png'
-              alt='LinkMentalHealth logo'
+              alt='interface wireframes (1)'
               placeholder='blurred'
               // layout='fixed'
               height={250}
             />
             <StaticImage
               src='../../images/projectImages/lmh/lmh_therapistProfile.png'
-              alt='LinkMentalHealth logo'
+              alt='interface wireframes (2)'
               placeholder='blurred'
               // layout='fixed'
               height={250}
@@ -214,7 +214,7 @@ const LMHCoop = ({ pageContext, location }) => {
           <FlexDivSingle>
             <StaticImage
               src='../../images/projectImages/lmh/lmh_employersPage.png'
-              alt='LinkMentalHealth logo'
+              alt='sample interface page'
               placeholder='blurred'
               // layout='fixed'
               // height={250}
@@ -259,6 +259,15 @@ const LMHCoop = ({ pageContext, location }) => {
             workflow. I've since become more familiar with back-end development,
             and continue to learn and grow.
           </Paragraph>
+          <FlexDivSingle>
+            <StaticImage
+              src='../../images/projectImages/lmh/logo2.png'
+              alt='organization logo'
+              placeholder='blurred'
+              // layout='fixed'
+              height={150}
+            />
+          </FlexDivSingle>
         </StyledSection>
       </Content>
       <Footer />

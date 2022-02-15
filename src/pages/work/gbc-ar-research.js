@@ -11,6 +11,10 @@ import Content from '../../components/content';
 import Footer from '../../components/footer';
 import FeaturedProjectTemplate from '../../components/featureProject';
 import { jobDetails } from '../resume';
+import { StaticImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
+import unityUIGif from '../../images/projectImages/ar-measure/unityUI.gif';
+import aeroGif from '../../images/projectImages/ar-measure/aero-demo.gif';
 
 const MeasureAR = ({ pageContext, location }) => {
   const {
@@ -23,15 +27,32 @@ const MeasureAR = ({ pageContext, location }) => {
 
   const customCrumbLabel = getLastItem(thePath).toLowerCase().replace('/', ' ');
 
-  // const jobDetails = {
-  //   role: 'Front-End Developer',
-  //   company: 'LinkMentalHealth',
-  //   jobType: 'Co-op; part-time',
-  //   dateTime: {
-  //     start: { dateTime: '2020-01', semantic: 'January 2020' },
-  //     end: { dateTime: '2020-05', semantic: 'May 2020' },
-  //   },
-  // };
+  const FlexDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  `;
+
+  const GridDiv = styled.div`
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  `;
+
+  const FlexDivSingle = styled(FlexDiv)`
+    justify-content: center;
+  `;
 
   return (
     <>
@@ -80,6 +101,27 @@ const MeasureAR = ({ pageContext, location }) => {
             detailing our progress and design solutions.
           </Paragraph>
         </StyledSection>
+        <FlexDivSingle>
+          <figure style={{ textAlign: 'center' }}>
+            <iframe
+              width='450'
+              height='640'
+              src='https://youtu.be/XuvMfPW_vQ0'
+              title='AR Measure Demo'
+            />
+            <figcaption>
+              Demo video.{' '}
+              <a
+                href='https://youtu.be/XuvMfPW_vQ0'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Watch it on Youtube
+              </a>{' '}
+              if you are having trouble viewing it here.
+            </figcaption>
+          </figure>
+        </FlexDivSingle>
         <StyledSection>
           <h2>Problem &amp; Challenge</h2>
           <Paragraph>
@@ -103,6 +145,13 @@ const MeasureAR = ({ pageContext, location }) => {
             user interaction.
           </Paragraph>
         </StyledSection>
+        <FlexDivSingle>
+          <StaticImage
+            src='../../images/projectImages/ar-measure/tri-vis.png'
+            alt='service ecosystem visualization'
+            placeholder='blurred'
+          />
+        </FlexDivSingle>
         <StyledSection>
           <h2>Solution</h2>
           <Paragraph>
@@ -114,6 +163,29 @@ const MeasureAR = ({ pageContext, location }) => {
             what functions were necessary for the app, and how we might leverage
             augmented reality throughout all these processes.
           </Paragraph>
+          <GridDiv>
+            <StaticImage
+              src='../../images/projectImages/ar-measure/flow1.png'
+              alt='calendar illustration'
+              placeholder='blurred'
+              // layout='fixed'
+              height={250}
+            />
+            <StaticImage
+              src='../../images/projectImages/ar-measure/flow2.png'
+              alt='savings illustration'
+              placeholder='blurred'
+              // layout='fixed'
+              height={250}
+            />
+          </GridDiv>
+          <FlexDivSingle>
+            <StaticImage
+              src='../../images/projectImages/ar-measure/user-flow.png'
+              alt='service ecosystem visualization'
+              placeholder='blurred'
+            />
+          </FlexDivSingle>
           <Paragraph>
             The second phase focused on translating our design solutions to a
             functional prototype. We added a developer to the team and began
@@ -137,6 +209,17 @@ const MeasureAR = ({ pageContext, location }) => {
             but the team managed to fulfill the design requirements and present
             a working prototype to the client stakeholders.
           </Paragraph>
+          <GridDiv>
+            <StaticImage
+              src='../../images/projectImages/ar-measure/crosshair.png'
+              alt='calendar illustration'
+              placeholder='blurred'
+              // layout='fixed'
+              height={300}
+            />
+            <img src={aeroGif} alt='Adobe Aero demo' height={300} />
+            <img src={unityUIGif} alt='Unity UI' height={300} />
+          </GridDiv>
         </StyledSection>
         <StyledSection>
           <h2>Reflection</h2>
