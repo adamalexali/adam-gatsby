@@ -105,9 +105,7 @@ section {
   display: block;
 }
 body {
-  font-size: 0.875rem;
-  line-height: 1.5;
-  font-weight: 400;
+
 }
 ol,
 ul {
@@ -140,6 +138,11 @@ table {
   --lightLinksActive: #3232ff;
   --darkLinks: #ff7324;
   --darkLinksActive: #ff8f4f;
+    // font-size: 14px;
+    font-size: 0.875rem;
+  // font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 #themeToggleBtn {
@@ -231,11 +234,11 @@ h6 {
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
 }
 h2 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 h3,
@@ -287,13 +290,13 @@ blockquote {
   text-align: right;
 }
 
-/* **************** MARKDOWN **************** */
-.post-content p {
-  margin-bottom: 0.5rem;
-}
-
 /* ************* MEDIA QUERIES ************* */
 @media only screen and (max-width: 700px) {
+
+:root {
+        font-size: 1rem;
+  }
+  
   body {
     padding: 0;
   }

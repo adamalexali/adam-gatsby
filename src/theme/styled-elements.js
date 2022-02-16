@@ -59,7 +59,7 @@ export const StyledFooter = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
 `;
 
 // export const FooterText = styled.p`

@@ -173,7 +173,7 @@ const MeasureAR = ({ pageContext, location }) => {
           </FlexDivSingle>
           <GridDiv>
             <StaticImage
-              src='../../images/projectImages/ar-measure/100-questions.jpg'
+              src='../../images/projectImages/ar-measure/100-questions.png'
               alt='stickies on a whiteboard'
               placeholder='blurred'
               // layout='fixed'
