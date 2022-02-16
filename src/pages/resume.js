@@ -2,7 +2,6 @@ import * as React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
 import {
-  Paragraph,
   StyledSection,
   StyledNav,
   StyledUl,
@@ -164,15 +163,7 @@ const Resume = ({ pageContext, location }) => {
               </a>{' '}
               <br />
               <p>+1 (289) 926-0221</p>
-              <a
-                href='https://adamalexali.com'
-                target='_blank'
-                rel='noreferrer'
-                className='external-link'
-              >
-                adamalexali.com
-              </a>{' '}
-              |{' '}
+              <Link to='/'>adamalexali.com</Link> |{' '}
               <a
                 href='https://www.linkedin.com/in/adamalexali/'
                 target='_blank'

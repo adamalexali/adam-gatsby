@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import {
   Paragraph,
   StyledSection,
@@ -97,29 +97,15 @@ const LMHCoop = ({ pageContext, location }) => {
             as user experience research.
           </Paragraph>
         </StyledSection>
-        <GridDiv>
+        <FlexDivSingle>
           <StaticImage
-            src='../../images/projectImages/lmh/calendar.png'
-            alt='calendar illustration'
+            src='../../images/projectImages/lmh/logo2.png'
+            alt='organization logo'
             placeholder='blurred'
             // layout='fixed'
-            width={250}
+            height={150}
           />
-          <StaticImage
-            src='../../images/projectImages/lmh/savings.png'
-            alt='savings illustration'
-            placeholder='blurred'
-            // layout='fixed'
-            width={250}
-          />
-          <StaticImage
-            src='../../images/projectImages/lmh/people-search.png'
-            alt='search illustration'
-            placeholder='blurred'
-            // layout='fixed'
-            width={250}
-          />
-        </GridDiv>
+        </FlexDivSingle>
         <StyledSection>
           <h2>Problem &amp; Challenge</h2>
           <Paragraph>
@@ -271,23 +257,38 @@ const LMHCoop = ({ pageContext, location }) => {
             workflow. I've since become more familiar with back-end development,
             and continue to learn and grow.
           </Paragraph>
-          <FlexDivSingle>
+          <GridDiv>
             <StaticImage
-              src='../../images/projectImages/lmh/logo2.png'
-              alt='organization logo'
+              src='../../images/projectImages/lmh/calendar.png'
+              alt='calendar illustration'
               placeholder='blurred'
               // layout='fixed'
-              height={150}
+              width={250}
             />
-          </FlexDivSingle>
+            <StaticImage
+              src='../../images/projectImages/lmh/savings.png'
+              alt='savings illustration'
+              placeholder='blurred'
+              // layout='fixed'
+              width={250}
+            />
+            <StaticImage
+              src='../../images/projectImages/lmh/people-search.png'
+              alt='search illustration'
+              placeholder='blurred'
+              // layout='fixed'
+              width={250}
+            />
+          </GridDiv>
         </StyledSection>
         <section style={{ textAlign: 'center' }}>
-          <Paragraph>
+          <h6>
             Next project—
             <Link to='/work/gbc-ar-research'>
               Augmented Reality UX Research Project
-            </Link>
-          </Paragraph>
+            </Link>{' '}
+            &rarr;
+          </h6>
         </section>
       </Content>
       <Footer />

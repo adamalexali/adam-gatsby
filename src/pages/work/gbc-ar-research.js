@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import {
   Paragraph,
   StyledSection,
@@ -164,20 +164,34 @@ const MeasureAR = ({ pageContext, location }) => {
             what functions were necessary for the app, and how we might leverage
             augmented reality throughout all these processes.
           </Paragraph>
+          <FlexDivSingle>
+            <StaticImage
+              src='../../images/projectImages/ar-measure/journeymap.png'
+              alt='user journey map'
+              placeholder='blurred'
+            />
+          </FlexDivSingle>
           <GridDiv>
             <StaticImage
-              src='../../images/projectImages/ar-measure/flow1.png'
-              alt='calendar illustration'
+              src='../../images/projectImages/ar-measure/100-questions.jpg'
+              alt='stickies on a whiteboard'
               placeholder='blurred'
               // layout='fixed'
-              height={250}
+              // height={250}
+            />
+            <StaticImage
+              src='../../images/projectImages/ar-measure/flow1.png'
+              alt='brainstorming the user flow'
+              placeholder='blurred'
+              // layout='fixed'
+              // height={250}
             />
             <StaticImage
               src='../../images/projectImages/ar-measure/flow2.png'
-              alt='savings illustration'
+              alt='building user flow through screen mockups'
               placeholder='blurred'
               // layout='fixed'
-              height={250}
+              // height={250}
             />
           </GridDiv>
           <FlexDivSingle>
@@ -213,7 +227,7 @@ const MeasureAR = ({ pageContext, location }) => {
           <GridDiv>
             <StaticImage
               src='../../images/projectImages/ar-measure/crosshair.png'
-              alt='calendar illustration'
+              alt='crosshair design for creating perimeters'
               placeholder='blurred'
               // layout='fixed'
               height={300}
@@ -263,10 +277,10 @@ const MeasureAR = ({ pageContext, location }) => {
           </Paragraph>
         </StyledSection>
         <section style={{ textAlign: 'center' }}>
-          <Paragraph>
+          <h6>
             Next project—
-            <Link to='/work/lmh-coop'>Front-End Co-op Placement</Link>
-          </Paragraph>
+            <Link to='/work/lmh-coop'>Front-End Co-op Placement</Link> &rarr;
+          </h6>
         </section>
       </Content>
       <Footer />

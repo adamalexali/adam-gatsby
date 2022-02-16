@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import {
@@ -8,6 +8,7 @@ import {
   StyledNav,
   ItalicSpan,
   BoldSpan,
+  StyledUl,
 } from '../theme/styled-elements';
 import ThemeToggle from '../components/themeToggle';
 import Content from '../components/content';
@@ -19,8 +20,12 @@ const IndexPage = ({ pageContext, location }) => {
     breadcrumb: { crumbs },
   } = pageContext;
 
-  const StyledH3 = styled.h3`
-    margin-bottom: 0.5rem;
+  const StyledLI = styled.li`
+    margin-bottom: 1rem;
+  `;
+
+  const ProjectsUl = styled.ul`
+    margin-top: 1rem;
   `;
 
   return (
@@ -129,8 +134,8 @@ const IndexPage = ({ pageContext, location }) => {
           <h2>Selected Works</h2>
           <Paragraph>
             Below you'll find case studies of some of my recent work as an
-            experience designer. This includes work as a front-end developer,
-            and as a UX researcher/designer.
+            experience designer. This includes work as a front-end developer and
+            a UX researcher/designer.
           </Paragraph>
           <Paragraph>
             You can also see samples my design work by visiting my{' '}
@@ -143,28 +148,40 @@ const IndexPage = ({ pageContext, location }) => {
             </a>{' '}
             profile.
           </Paragraph>
-          <ul>
-            <li>
-              <StyledH3>
+          <ProjectsUl>
+            <StyledLI>
+              <h3>
                 <Link to='/work/lmh-coop'>
                   Front-End Co-op Placement (
                   <time dateTime='2020-01'>January 2020</time>
                   &ndash;
                   <time dateTime='2020-05'>May 2020</time>)
                 </Link>
-              </StyledH3>
-            </li>
-            <li>
-              <StyledH3>
+              </h3>
+              <StyledUl>
+                <li>
+                  Co-op placement developing a web platform for connecting users
+                  with personalized mental health services.
+                </li>
+              </StyledUl>
+            </StyledLI>
+            <StyledLI>
+              <h3>
                 <Link to='/work/gbc-ar-research'>
                   Augmented Reality UX Research Project (
                   <time dateTime='2019-09'>September 2019</time>
                   &ndash;
                   <time dateTime='2020-06'>June 2020</time>)
                 </Link>
-              </StyledH3>
-            </li>
-          </ul>
+              </h3>
+              <StyledUl>
+                <li>
+                  UX research project exploring integration of augmented reality
+                  for digital products &amp; services.
+                </li>
+              </StyledUl>
+            </StyledLI>
+          </ProjectsUl>
         </StyledSection>
         <StyledSection>
           <h2>Currently…</h2>
