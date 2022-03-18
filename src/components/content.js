@@ -19,7 +19,7 @@ const Content = ({ pageMeta, children }) => {
     <>
       <GlobalStyle />
       <StyledMain>
-        <Helmet>
+        <Helmet htmlAttributes={{ lang: 'en' }}>
           <meta charSet='UTF-8' />
           <meta http-equiv='X-UA-Compatible' content='IE=edge' />
           <meta
@@ -27,9 +27,8 @@ const Content = ({ pageMeta, children }) => {
             content='width=device-width, initial-scale=1.0'
           />
           <meta name='author' content='Adam Ali' />
-
           <meta name='description' content={pageMeta.description} />
-          <title>{pageMeta.title} Adam Ali—UX developer</title>
+          <title>{pageMeta.title} Adam Ali—UX Developer</title>
           <link rel='stylesheet' href='../theme/reset.css' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />

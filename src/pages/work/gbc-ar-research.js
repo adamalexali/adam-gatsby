@@ -105,11 +105,14 @@ const MeasureAR = ({ pageContext, location }) => {
         <FlexDivSingle>
           <figure style={{ textAlign: 'center' }}>
             <iframe
-              width='450'
-              height='640'
-              src='https://youtu.be/XuvMfPW_vQ0'
-              title='AR Measure Demo'
-            />
+              width='560'
+              height='315'
+              src='https://www.youtube.com/embed/XuvMfPW_vQ0'
+              title='YouTube video player—AR Measure Demo by Adam Ali'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowfullscreen
+            ></iframe>
             <figcaption>
               Demo video.{' '}
               <a

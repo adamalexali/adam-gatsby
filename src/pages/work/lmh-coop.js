@@ -131,7 +131,7 @@ const LMHCoop = ({ pageContext, location }) => {
             per high-fidelity wireframes I was given by the design team; using a
             combination of <abbr title='HyperText Markup Language'>HTML</abbr>,{' '}
             <abbr title='Cascading Style Sheets'>CSS</abbr>,{' '}
-            <abbr title='JavaScript'>JS</abbr> and the Bootstrap library. I
+            <abbr title='JavaScript'>JS</abbr> and the Bootstrap framework. I
             would also work with back-end tools like MongoDB and NodeJS to
             manage and update LinkMentalHealth's database of users and
             therapists.

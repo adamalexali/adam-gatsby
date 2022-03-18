@@ -7,6 +7,7 @@ const ThemeToggle = ({ pageContext, location }) => {
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
         <button
+          aria-label='Toggle theme'
           id='themeToggleBtn'
           onClick={(e) =>
             theme === 'light' ? toggleTheme('dark') : toggleTheme('light')

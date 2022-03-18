@@ -136,8 +136,10 @@ table {
   --light: #faf8f6;
   --lightLinks: #0000ff;
   --lightLinksActive: #3232ff;
-  --darkLinks: #ff7324;
-  --darkLinksActive: #ff8f4f;
+  // --darkLinks: #ff7324;
+  // --darkLinksActive: #ff8f4f;
+  --darkLinks: #ff4d4d;
+  --darkLinksActive: #ff7070;
     // font-size: 14px;
     font-size: 0.875rem;
   // font-size: 1rem;
@@ -303,10 +305,12 @@ blockquote {
   .rightAlign {
   text-align: left;
 }
+}
+
+@media only screen and (max-width: 600px) {
 
 iframe {
-  width: 90%;
-  height: auto;
+  max-width: 100%;
 }
 }
 `;

@@ -48,8 +48,8 @@ const IndexPage = ({ pageContext, location }) => {
           <ThemeToggle />
         </StyledNav>
 
-        <h1>Adam Ali</h1>
         <section>
+          <h1>Adam Ali</h1>
           <Paragraph>
             Hello! I'm Adam, a human-centered{' '}
             <abbr title='user experience'>UX</abbr> developer and researcher
@@ -213,7 +213,7 @@ const IndexPage = ({ pageContext, location }) => {
           </ul>
         </StyledSection>
 
-        <StyledSection>
+        <section>
           <h2>Previously…</h2>
           <ul>
             <li>
@@ -240,7 +240,7 @@ const IndexPage = ({ pageContext, location }) => {
               </Paragraph>
             </li>
           </ul>
-        </StyledSection>
+        </section>
       </Content>
       <Footer />
     </>
