@@ -51,7 +51,7 @@ const IndexPage = ({ pageContext, location }) => {
         <section>
           <h1>Adam Ali</h1>
           <Paragraph>
-            Hello! I'm Adam, a human-centered{' '}
+            Hello! I'm Adam &#40;he/him&#41;, a human-centered{' '}
             <abbr title='user experience'>UX</abbr> developer and researcher
             equipped with an interdisciplinary foundation in digital
             experience—including UX,{' '}
@@ -59,13 +59,49 @@ const IndexPage = ({ pageContext, location }) => {
             development, systems design, and service design.
           </Paragraph>
           <Paragraph>Welcome to my little corner of the internet!</Paragraph>
+
+          {/* ************************************ */}
           <Paragraph>
+            <BoldSpan>
+              This site is currently being overhauled—but feel free to{' '}
+              <Link to='/resume'>view my resume</Link> for more info, or just
+              shoot me a message on{' '}
+              <a
+                href='https://twitter.com/adamalexali/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Twitter
+              </a>{' '}
+              or{' '}
+              <a
+                href='https://www.linkedin.com/in/adamalexali/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                LinkedIn
+              </a>{' '}
+              &#40;or by{' '}
+              <a
+                href='mailto:adamalexali@gmail.com'
+                target='_blank'
+                rel='noreferrer'
+              >
+                email
+              </a>{' '}
+              &#41;.
+            </BoldSpan>
+          </Paragraph>
+
+          <Paragraph>Stay tuned :&#41;</Paragraph>
+
+          {/* <Paragraph>
             I am particularly interested in user experience design,
             human-computer interaction, service design, networks, and the
             relationship between tech &amp; ethics. You can{' '}
             <Link to='/about'>find out more about me &amp; my interests</Link>,
             if you're curious.
-          </Paragraph>
+          </Paragraph> */}
           {/* <Paragraph>
             I am particularly interested in user experience &#40;UX&#41; design,
             human-computer interaction &#40;HCI&#41;, service design, the
@@ -90,7 +126,7 @@ const IndexPage = ({ pageContext, location }) => {
             <Link to='/about'>find out more about me &amp; my interests</Link>,
             if you're curious.
           </Paragraph> */}
-          <Paragraph>
+          {/* <Paragraph>
             Ultimately, I want to create more accessible, inclusive, and open
             digital public spaces—in whatever ways I can achieve that. I'm
             excited about the future, and want to contribute my part to shaping
@@ -127,10 +163,10 @@ const IndexPage = ({ pageContext, location }) => {
               email me
             </a>{' '}
             if you want to get real archaic!&#41;.
-          </Paragraph>
+          </Paragraph> */}
         </section>
 
-        <StyledSection>
+        {/* <StyledSection>
           <h2>Selected Works</h2>
           <Paragraph>
             Below you'll find case studies of some of my recent work as an
@@ -240,7 +276,7 @@ const IndexPage = ({ pageContext, location }) => {
               </Paragraph>
             </li>
           </ul>
-        </section>
+        </section> */}
       </Content>
       <Footer />
     </>

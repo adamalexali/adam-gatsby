@@ -38,7 +38,7 @@ const AboutPage = ({ pageContext, location }) => {
           <ThemeToggle />
         </StyledNav>
 
-        <section>
+        {/* <section>
           <h1>About me</h1>
           <Paragraph>
             I am currently a student at George Brown College, completing a
@@ -90,7 +90,7 @@ const AboutPage = ({ pageContext, location }) => {
               <Paragraph>Gardening; plants</Paragraph>
             </li>
           </StyledUl>
-        </StyledSection>
+        </StyledSection> */}
       </Content>
       <Footer />
     </>

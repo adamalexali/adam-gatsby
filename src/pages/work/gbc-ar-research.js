@@ -76,7 +76,7 @@ const MeasureAR = ({ pageContext, location }) => {
           <ThemeToggle />
         </StyledNav>
 
-        <section>
+        {/* <section>
           <h1>Augmented Reality UX Research Project</h1>
           <FeaturedProjectTemplate jobDetails={jobDetails[2]} />
         </section>
@@ -284,7 +284,7 @@ const MeasureAR = ({ pageContext, location }) => {
             Next project—
             <Link to='/work/lmh-coop'>Front-End Co-op Placement</Link> &rarr;
           </h6>
-        </section>
+        </section> */}
       </Content>
       <Footer />
     </>

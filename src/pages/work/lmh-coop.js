@@ -74,7 +74,7 @@ const LMHCoop = ({ pageContext, location }) => {
           <ThemeToggle />
         </StyledNav>
 
-        <section>
+        {/* <section>
           <h1>Front-End Co-op Placement</h1>
           <FeaturedProjectTemplate jobDetails={jobDetails[3]} />
         </section>
@@ -289,7 +289,7 @@ const LMHCoop = ({ pageContext, location }) => {
             </Link>{' '}
             &rarr;
           </h6>
-        </section>
+        </section> */}
       </Content>
       <Footer />
     </>
